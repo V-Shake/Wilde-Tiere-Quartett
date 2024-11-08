@@ -78,8 +78,8 @@ const data = [
   {
     "id": 5,
     "name_german": "Wanderspinne",
-    "trivia_german": "Versteckt sich oft in Bananenstauden, deshalb auch ?Bananenspinne? genannt",
-    "trivia": "Often hide in banana trees, so they are also called ?banana spiders?",
+    "trivia_german": "Versteckt sich oft in Bananenstauden, deshalb auch Bananenspinne genannt",
+    "trivia": "Often hide in banana trees, so they are also called banana spiders",
     "group": "B",
     "groupname_german": "Giftig und infektiös",
     "groupname": "Poisonous and Infectious",
@@ -161,7 +161,7 @@ const data = [
     "groupname": "Reptiles",
     "group_number": 1,
     "name": "Crocodile",
-    "max_weight": "1100,00",
+    "max_weight": "1100",
     "max_age": 70,
     "top_speed": 29,
     "deaths": 2500,
@@ -218,7 +218,7 @@ const data = [
     "groupname": "Reptiles",
     "group_number": 4,
     "name": "Galapagos Tortoise",
-    "max_weight": "300,0",
+    "max_weight": "300",
     "max_age": 176,
     "top_speed": 1,
     "deaths": 0,
@@ -243,7 +243,7 @@ const data = [
     "deaths": 0,
     "max_length": 450,
     "litter_size": 15000000,
-    "continents": "",
+    "continents": "North America, South America, Europe,  Oceania",
     "intelligence": 4
   },
   {
@@ -256,13 +256,13 @@ const data = [
     "groupname": "Sea Creatures",
     "group_number": 2,
     "name": "Snail",
-    "max_weight": "14,0",
+    "max_weight": "14",
     "max_age": 1,
     "top_speed": "0,01",
     "deaths": 10000,
     "max_length": 90,
     "litter_size": 20,
-    "continents": "",
+    "continents": "North America, Europe, Asia, Africa",
     "intelligence": 1
   },
   {
@@ -281,7 +281,7 @@ const data = [
     "deaths": 0,
     "max_length": 1400,
     "litter_size": 10000000,
-    "continents": "",
+    "continents": "South America, Africa, Oceania",
     "intelligence": 6
   },
   {
@@ -319,7 +319,7 @@ const data = [
     "deaths": 0,
     "max_length": 1450,
     "litter_size": 300,
-    "continents": "",
+    "continents": "North America, South America, Africa, Oceania",
     "intelligence": 4
   },
   {
@@ -338,7 +338,7 @@ const data = [
     "deaths": 10,
     "max_length": 600,
     "litter_size": 14,
-    "continents": "",
+    "continents": "North America, South America, Africa, Oceania",
     "intelligence": 5
   },
   {
@@ -357,7 +357,7 @@ const data = [
     "deaths": 0,
     "max_length": 3360,
     "litter_size": 1,
-    "continents": "",
+    "continents": "North America, Europe, Oceania, Antarctica",
     "intelligence": 8
   },
   {
@@ -376,7 +376,7 @@ const data = [
     "deaths": 0,
     "max_length": 950,
     "litter_size": 1,
-    "continents": "",
+    "continents": "North America, Europe, Oceania, Antarctica",
     "intelligence": 10
   },
   {
