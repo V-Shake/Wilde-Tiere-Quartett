@@ -9,6 +9,12 @@
     font-family: "Inter", sans-serif;
 }
 
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
 .border-bottom {
     border-bottom: var(--thick-line-strength) solid var(--card-dark-color);
 }
@@ -45,19 +51,20 @@
 .card-number {
     position: absolute;
     top: 60%;
-    left: 0.5rem;
+    left: 1rem;
     transform: translateY(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: 700;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     border-radius: 0.6em;
-    width: 2.2em;
-    height: 2.3em;
-    background-color: var(--card-dark-color);
-    border: 3px solid var(--card-background-color);
+    width: 2.5em;
+    height: 2.6em;
+    background-color: var(--group-color);
+    border: 1px solid var(--card-dark-color);
+    box-shadow: 0 0 0 3px var(--card-background-color);
 }
 
 .card-title {
@@ -65,7 +72,7 @@
     grid-row: 8;
     display: flex;
     align-items: center;
-    padding-left: 4rem;
+    padding-left: 4.8rem;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1rem;
@@ -75,15 +82,83 @@
     grid-column: span 6;
     display: flex;
     text-align: left;
-    padding-left: 4rem;
-    padding-right: 0.5rem;
-    font-style: italic;
-    font-size: .7em;
-    margin-bottom: 0.9rem;
-    margin-top: -0.5rem;
+    padding-left: 4.8rem;
+    padding-right: 1rem;
+    font-size: .66em;
+    margin-bottom: 0.4rem;
+    margin-top: -0.4rem;
     /* border-top: 1px solid var(--card-dark-color); */
     /* box-shadow: 2px 0px 10px var(--card-dark-color); */
 }
+
+.groupname {
+    grid-column: span 4;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0.9rem;
+    left: 2.5rem;
+    padding: 0.35rem 0.5rem;
+    z-index: 1;
+    color: var(--card-dark-color);
+    font-size: 0.75em;
+    font-weight: bold;
+    text-shadow: 
+        -0.5px -0.5px 0 #FFF,  
+         0.5px -0.5px 0 #FFF,
+        -0.5px  0.5px 0 #FFF,
+         0.5px  0.5px 0 #FFF; /* Add outer stroke effect */
+}
+
+.group-rectangle {
+    position: absolute;
+    top: 6%;
+    left: 1rem;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--card-background-color);
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 0.6em;
+    width: 1.8em;
+    height: 1.8em;
+    background-color: var(--group-color);
+    border: 1px solid var(--card-dark-color);
+}
+
+.intelligence-box {
+    grid-column: 5 / span 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0.9rem;
+    right: 1rem;
+    background-color: var(--card-dark-color);
+    padding: 0.1rem 0.5rem; /* Adjusted padding for a more compact fit */
+    border-radius: 0.4em;
+    z-index: 1;
+    gap: 0.6rem; /* Control space between icon and number */
+    border: 2px solid;
+}
+
+.intelligence-icon {
+    display: flex;
+    align-items: center; /* Aligns icon and text vertically */
+    width: 1em;
+    height: 1em;
+}
+
+.intelligence-content {
+    font-size: 0.75em;
+    font-weight: bold;
+    color: var(--card-background-color);
+}
+
 
 .stat-box {
     grid-column: span 6;
@@ -91,10 +166,9 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr); 
-    gap: 0.5em;
-    padding: 0 0.5rem;
-    margin-top: -.4rem;
-    margin-bottom: -0.5rem;
+    gap: 0.6em;
+    padding: 0 1rem;
+    margin-bottom: -0.8rem;
 }
 
 .stat-pair {
@@ -138,7 +212,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 500;
 }
 
@@ -161,67 +235,78 @@
 
 .card-bottom {
     grid-column: span 6;
-    font-size: 0.6em;
+    font-size: 0.65em;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 1.5em;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
 }
 
-.group-A .card-number,
-.group-A .card-bottom{
-    background-color: #7D982A;
+.group-A {
+    --group-color: #7D982A;
 }
 
-.group-B .card-number,
-.group-B .card-bottom {
-    background-color: #A52A2A;
-    /* Brown */
+.group-B {
+    --group-color: #e61434;
 }
 
-.group-C .card-number,
-.group-C .card-bottom {
-    background-color: #5F9EA0;
-    /* CadetBlue */
+.group-C {
+    --group-color: #9e634d;
 }
 
-.group-D .card-number,
-.group-D .card-bottom {
-    background-color: #D2691E;
-    /* Chocolate */
+.group-D {
+    --group-color: #5F9EA0;
 }
 
-.group-E .card-number,
-.group-E .card-bottom {
-    background-color: #FF7F50;
-    /* Coral */
+.group-E {
+    --group-color: #437ce6;
 }
 
-.group-F .card-number,
-.group-F .card-bottom {
-    background-color: #6495ED;
-    /* CornflowerBlue */
+.group-F {
+    --group-color: #ceba60;
 }
 
-.group-G .card-number,
-.group-G .card-bottom {
-    background-color: #DC143C;
-    /* Crimson */
+.group-G {
+    --group-color: #299f7c;
 }
 
-.group-H .card-number,
-.group-H .card-bottom {
-    background-color: #00FFFF;
-    /* Aqua */
+.group-H {
+    --group-color: #7ed3d3;
 }
 
+/* Now apply the variable to .card-number and .card-bottom for each group */
+.group-A .card-number, .group-A .card-bottom, 
+.group-B .card-number, .group-B .card-bottom,
+.group-C .card-number, .group-C .card-bottom,
+.group-D .card-number, .group-D .card-bottom, 
+.group-E .card-number, .group-E .card-bottom,
+.group-F .card-number, .group-F .card-bottom,
+.group-G .card-number, .group-G .card-bottom,
+.group-H .card-number, .group-H .card-bottom{
+    background-color: var(--group-color);
+}
 
-/* .icon {
-    width: 30px; 
-    height: 30px;
-    margin-right: 1em;
-    vertical-align: middle;
-} */
+.group-A .intelligence-icon,
+.group-B .intelligence-icon,
+.group-C .intelligence-icon,
+.group-D .intelligence-icon,
+.group-E .intelligence-icon,
+.group-F .intelligence-icon,
+.group-G .intelligence-icon,
+.group-H .intelligence-icon {
+    color: var(--group-color);
+}
+
+.group-A .intelligence-box,
+.group-B .intelligence-box,
+.group-C .intelligence-box,
+.group-D .intelligence-box,
+.group-E .intelligence-box,
+.group-F .intelligence-box,
+.group-G .intelligence-box,
+.group-H .intelligence-box {
+    border-color: var(--group-color);
+}
 
