@@ -6,15 +6,72 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "Fira Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem;
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr;
+    grid-gap: 1rem;
 }
+
+body {
+    background-color: var(--card-dark-color);
+    text-align: center;
+    color: var(--card-background-color);
+    margin: 0;
+}
+
+header {
+    grid-column: span 4;
+    grid-row: 1;
+}
+
+nav {
+    grid-row: 1;
+    background-color: #232323;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+    padding: 0.6rem 8rem; 
+}
+
+#logo {
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: auto;
+    font-weight: 600;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    height: 4em;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+main {
+    grid-column: span 4;
+    padding-top: 8rem; /* Adjust padding based on the height of the nav */
+}
+
 .border-bottom {
     border-bottom: var(--thick-line-strength) solid var(--card-dark-color);
 }
@@ -27,6 +84,7 @@
 
 .card-content {
     background-color: var(--card-background-color);
+    color: var(--card-dark-color);
     display: grid;
     overflow: hidden;
     width: 300px;
@@ -84,8 +142,8 @@
     text-align: left;
     padding-left: 4.8rem;
     padding-right: 1rem;
-    font-size: .66em;
-    margin-bottom: 0.4rem;
+    font-size: .68em;
+    margin-bottom: 0.6rem;
     margin-top: -0.4rem;
     /* border-top: 1px solid var(--card-dark-color); */
     /* box-shadow: 2px 0px 10px var(--card-dark-color); */
@@ -105,11 +163,12 @@
     color: var(--card-dark-color);
     font-size: 0.75em;
     font-weight: bold;
-    text-shadow: 
-        -0.5px -0.5px 0 #FFF,  
-         0.5px -0.5px 0 #FFF,
-        -0.5px  0.5px 0 #FFF,
-         0.5px  0.5px 0 #FFF; /* Add outer stroke effect */
+    text-shadow:
+        -0.5px -0.5px 0 #FFF,
+        0.5px -0.5px 0 #FFF,
+        -0.5px 0.5px 0 #FFF,
+        0.5px 0.5px 0 #FFF;
+    /* Add outer stroke effect */
 }
 
 .group-rectangle {
@@ -139,18 +198,22 @@
     top: 0.9rem;
     right: 1rem;
     background-color: var(--card-dark-color);
-    padding: 0.1rem 0.5rem; /* Adjusted padding for a more compact fit */
+    padding: 0.1rem 0.5rem;
+    /* Adjusted padding for a more compact fit */
     border-radius: 0.4em;
     z-index: 1;
-    gap: 0.6rem; /* Control space between icon and number */
-    border: 2px solid;
+    gap: 0.6rem;
+    /* Control space between icon and number */
+    border: 2px solid var(--group-color);
 }
 
 .intelligence-icon {
     display: flex;
-    align-items: center; /* Aligns icon and text vertically */
+    align-items: center;
+    /* Aligns icon and text vertically */
     width: 1em;
     height: 1em;
+    color: var(--group-color)
 }
 
 .intelligence-content {
@@ -165,7 +228,7 @@
     grid-row: span 2;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
     gap: 0.6em;
     padding: 0 1rem;
     margin-bottom: -0.8rem;
@@ -242,6 +305,7 @@
     text-align: center;
     padding: 0 1.5em;
     margin-top: 1.2rem;
+    background-color: var(--group-color);
 }
 
 .group-A {
@@ -249,7 +313,7 @@
 }
 
 .group-B {
-    --group-color: #e61434;
+    --group-color: #e92946;
 }
 
 .group-C {
@@ -276,37 +340,17 @@
     --group-color: #7ed3d3;
 }
 
-/* Now apply the variable to .card-number and .card-bottom for each group */
-.group-A .card-number, .group-A .card-bottom, 
-.group-B .card-number, .group-B .card-bottom,
-.group-C .card-number, .group-C .card-bottom,
-.group-D .card-number, .group-D .card-bottom, 
-.group-E .card-number, .group-E .card-bottom,
-.group-F .card-number, .group-F .card-bottom,
-.group-G .card-number, .group-G .card-bottom,
-.group-H .card-number, .group-H .card-bottom{
-    background-color: var(--group-color);
+.active-link {
+    color: white;
 }
 
-.group-A .intelligence-icon,
-.group-B .intelligence-icon,
-.group-C .intelligence-icon,
-.group-D .intelligence-icon,
-.group-E .intelligence-icon,
-.group-F .intelligence-icon,
-.group-G .intelligence-icon,
-.group-H .intelligence-icon {
-    color: var(--group-color);
+/* Navigation Behavior */
+.transparent-light {
+    background-color: rgba(14, 14, 14, 0.05); 
+    transition: background-color 0.3s ease; 
 }
 
-.group-A .intelligence-box,
-.group-B .intelligence-box,
-.group-C .intelligence-box,
-.group-D .intelligence-box,
-.group-E .intelligence-box,
-.group-F .intelligence-box,
-.group-G .intelligence-box,
-.group-H .intelligence-box {
-    border-color: var(--group-color);
+.transparent-dark {
+    background-color: rgba(14, 14, 14, 0.95);
+    transition: background-color 0.3s ease; 
 }
-

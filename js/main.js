@@ -72,7 +72,7 @@ $(document).ready(function () {
             </div>
     
         </div>`);
-        $('#wrapper').append(divBox);
+        $('#wrapper main').append(divBox);
     });
 });
 
