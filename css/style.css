@@ -4,16 +4,19 @@
     --thick-line-strength: 1px;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     font-family: "Fira Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 #wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto 1fr;
-   
+
 }
 
 body {
@@ -34,11 +37,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; 
-    position: fixed; 
-    top: 0; 
-    z-index: 1000; 
-    padding: 0.6rem 8rem; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 0.6rem 8rem;
 }
 
 #logo {
@@ -46,6 +49,7 @@ nav {
     text-transform: uppercase;
     margin-right: auto;
     font-weight: 600;
+    font-size: 1rem;
 }
 
 ul {
@@ -55,10 +59,11 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
-    height: 4em;
+    gap: 3em;
+    height: 3em;
     margin: 0 auto;
     flex-grow: 1;
+    font-size: 0.8rem;
 }
 
 nav ul li a {
@@ -68,14 +73,14 @@ nav ul li a {
 
 main {
     grid-column: span 4;
-    padding-top: 6rem; 
+    padding-top: 6rem;
 }
 
 .overview-page {
     background-color: transparent;
-    padding: 0; 
+    padding: 0;
     margin: 0;
-    position: relative; 
+    position: relative;
     width: 100%;
     height: auto;
     display: flex;
@@ -87,11 +92,17 @@ main {
 
 .overview-header {
     color: var(--card-dark-color);
-    top: 9rem;
+    top: 7rem;
     text-align: center;
     margin-top: 10vh;
     position: absolute;
     width: 25rem;
+}
+
+.overview-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
     text-shadow:
     -0.5px -0.5px 0 #FFF,
     0.5px -0.5px 0 #FFF,
@@ -99,48 +110,40 @@ main {
     0.5px 0.5px 0 #FFF;
 }
 
-.overview-header h1 {
-    font-size: 1.5rem; 
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
 .overview-header p {
-    font-size: 1rem; 
-    line-height: 1.6; 
-    max-width: 600px; 
-    margin: 0 auto; 
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow:
+    -0.5px -0.5px 0 #FFF,
+    0.5px -0.5px 0 #FFF,
+    -0.5px 0.5px 0 #FFF,
+    0.5px 0.5px 0 #FFF;
 }
 
 .overview-button {
-    display: inline-block; 
-    margin-top: 1rem; 
-    padding: 0.5rem 1rem; 
-    font-size: 0.8rem; 
-    background-color: transparent;
-    border: 1px solid;
-    border-radius: 8px; 
-    cursor: pointer; 
-    transition: all 0.3s ease; 
-    text-decoration: none; 
-    color: var(--card-dark-color);
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--card-background-color);
+    background-color:  var(--card-dark-color);
 }
 
 .overview-button:hover {
-    background-color: var(--card-dark-color);
-    color: var(--card-background-color);
-    border-color: var(--card-dark-color); 
-    text-shadow:
-    -0px -0px 0 #FFF,
-    0.5px -0px 0 #FFF,
-    -0px 0px 0 #FFF,
-    0px 0px 0 #FFF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
 
 .overview-image {
     width: 100%;
     height: auto;
-    display: block; 
+    display: block;
     margin-bottom: 2rem;
 }
 
@@ -170,13 +173,15 @@ main {
     width: 50%;
     text-align: left;
     padding: 4rem;
-    display: flex; /* Enables flexbox layout */
-    flex-direction: column; /* Aligns content vertically */
+    display: flex;
+    /* Enables flexbox layout */
+    flex-direction: column;
+    /* Aligns content vertically */
     justify-content: flex-end;
 }
 
 .text-left h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -201,14 +206,19 @@ main {
 
 .info-row {
     display: flex;
-    justify-content: space-between; /* Space evenly between rectangles */
-    gap: 2.5rem; /* Add some space between rectangles */
-    margin-top: 2.5rem; /* Space above the row */
+    justify-content: space-between;
+    /* Space evenly between rectangles */
+    gap: 2.5rem;
+    /* Add some space between rectangles */
+    margin-top: 2.5rem;
+    /* Space above the row */
 }
 
 .info-row-rectangle {
-    background: none; /* No fill, just border */
-    border: 1px solid var(--card-background-color); /* Adjust as needed */
+    background: none;
+    /* No fill, just border */
+    border: 1px solid var(--card-background-color);
+    /* Adjust as needed */
     border-radius: 40px;
     text-align: center;
     display: flex;
@@ -220,14 +230,16 @@ main {
 
 .info-img {
     flex: 1;
-    width: 100%; /* Ensure image fits within the rectangle */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; 
+    width: 100%;
+    /* Ensure image fits within the rectangle */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
 }
 
 .info-title {
-    margin: 1.5rem; /* Space between image and text */
-    font-size: 1.2rem; /* Adjust font size */
+    margin: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     /* text-transform: uppercase; */
 }
@@ -236,10 +248,33 @@ main {
     border-bottom: var(--thick-line-strength) solid var(--card-dark-color);
 }
 
+#cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2rem;
+    justify-content: center;
+    align-items: start; 
+    justify-items: center;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--card-dark-color); 
+}
+
 .card-wrapper {
     background-color: var(--card-dark-color);
-    padding: 12px;
-    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box; 
+    margin: 0; 
+    width: 350px;
+    height: 500px; 
 }
 
 .card-content {
@@ -247,18 +282,18 @@ main {
     color: var(--card-dark-color);
     display: grid;
     overflow: hidden;
-    width: 300px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(12, 1fr);
     border-radius: 1em;
     position: relative;
 }
 
+
 .card-image {
     grid-column: span 6;
     grid-row: span 7;
-    background-color: white;
     width: 100%;
     height: 100%;
     max-width: 100%;
@@ -274,7 +309,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--card-background-color);
     font-weight: 700;
     font-size: 1.2rem;
     border-radius: 0.6em;
@@ -298,11 +333,11 @@ main {
 
 .card-trivia {
     grid-column: span 6;
-    display: flex;
     text-align: left;
     padding-left: 4.8rem;
     padding-right: 1rem;
-    font-size: .68em;
+    font-size: 0.68rem;
+    line-height: 1.2; /* Adjust line height to ensure two lines */
     margin-bottom: 0.6rem;
     margin-top: -0.4rem;
     /* border-top: 1px solid var(--card-dark-color); */
@@ -485,7 +520,8 @@ main {
 }
 
 .group-F {
-    --group-color: #27af86;;
+    --group-color: #27af86;
+    ;
 }
 
 .group-G {
@@ -503,14 +539,19 @@ main {
 
 /* Navigation Behavior */
 .transparent-light {
-    background-color: rgba(16, 16, 16, 0.2); 
-    transition: background-color 0.3s ease; 
+    background-color: rgba(16, 16, 16, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 .transparent-dark {
-    background-color: rgba(16, 16, 16, 0.98);
-    transition: background-color 0.3s ease; 
+    background: rgba(16, 16, 16, 0.93); 
+    box-shadow: 0 4px 30px rgba(3, 3, 3, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(27, 27, 27, 0.52);
+    transition: background-color 0.3s ease;
 }
+
 
 /* Font color for top of page */
 .font-black {
@@ -525,10 +566,10 @@ main {
 
 /* Sorting Buttons*/
 #sorting-buttons span {
-    font-size: 0.8rem; 
-    margin-right: 2rem; 
-    display: inline-block; 
-    line-height: 2rem; 
+    font-size: 0.8rem;
+    margin-right: 2rem;
+    display: inline-block;
+    line-height: 2rem;
 }
 
 #sorting-buttons {
@@ -542,10 +583,10 @@ main {
 #sorting-buttons button {
     appearance: none;
     background-color: #060606;
-    border:  #030303; 
+    border: #030303;
     border-radius: 10px;
     box-sizing: border-box;
-    color: var(--card-background-color); 
+    color: var(--card-background-color);
     cursor: pointer;
     font-size: 0.7rem;
     line-height: normal;
@@ -580,14 +621,15 @@ main {
 
 #sorting-buttons button:disabled {
     pointer-events: none;
-    opacity: 0.6; /* Visual indication of being disabled */
+    opacity: 0.6;
+    /* Visual indication of being disabled */
 }
 
 
 /* Back to Top Button */
 #back-to-top {
-    display: none; 
-    position: fixed; 
+    display: none;
+    position: fixed;
     right: 2.5rem;
     padding: 0.5rem 0.6rem;
     background-color: var(--card-background-color);
@@ -596,21 +638,20 @@ main {
     text-decoration: none;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); 
-  }
-  
-  #back-to-top:hover {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#back-to-top:hover {
     box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
     padding: 0.6rem 0.7rem;
     transform: translateY(-2px);
-  }
-  
-  #back-to-top.show {
-    display: block; 
+}
+
+#back-to-top.show {
+    display: block;
     bottom: 3rem;
-  }
-  
-  #back-to-top.hide {
-    bottom: -3rem; 
-  }
-  
+}
+
+#back-to-top.hide {
+    bottom: -3rem;
+}
