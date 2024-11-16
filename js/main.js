@@ -8,7 +8,7 @@ $(document).ready(function () {
             let groupClass = `group-${animal.group}`;
             let divBox = $(`<div class="card-wrapper">
                 <div class="card-content ${groupClass}">
-                    <img class="card-image border-bottom" src="images/${animal.group}${animal.group_number}.jpg" alt="${animal.name_german}" />
+                    <img class="card-image border-bottom" src="images/${animal.group}${animal.group_number}.png" alt="${animal.name_german}" />
                     <div class="card-number">${animal.group}${animal.group_number}</div>
                     <div class="card-title">${animal.name_german}</div>
                     <div class="card-trivia border-bottom">${animal.trivia_german}</div>
