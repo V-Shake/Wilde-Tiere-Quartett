@@ -243,7 +243,7 @@ const data = [
     "deaths": 0,
     "max_length": 450,
     "litter_size": 15000000,
-    "continents": "North America, South America, Europe,  Oceania",
+    "continents": "Americas, Europe,  Oceania",
     "intelligence": 4
   },
   {
@@ -319,7 +319,7 @@ const data = [
     "deaths": 0,
     "max_length": 1450,
     "litter_size": 300,
-    "continents": "North America, South America, Africa, Oceania",
+    "continents": "Americas, Africa, Oceania",
     "intelligence": 4
   },
   {
@@ -338,7 +338,7 @@ const data = [
     "deaths": 10,
     "max_length": 600,
     "litter_size": 14,
-    "continents": "North America, South America, Africa, Oceania",
+    "continents": "Americas, Africa, Oceania",
     "intelligence": 5
   },
   {

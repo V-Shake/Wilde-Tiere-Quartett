@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilde Tiere Quartett</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <div id="logo">Wilde Tiere</div>
+                    <li><a href="index.html">Überblick</a></li>
+                    <li><a class="active-link">Quartett Karten</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="sorting-buttons">
+                <span>Sortiere nach: </span>
+                <button id="sort-groups" class="active">Gruppen</button>
+                <button id="sort-max_weight">Max Gewicht</button>
+                <button id="sort-max_age">Max Alter</button>
+                <button id="sort-top_speed">Max Geschwindigkeit</button>
+                <button id="sort-deaths">Tödliche Vorfälle</button>
+                <button id="sort-max_length">Max Länge</button>
+                <button id="sort-litter_size">Wurfgröße</button>
+                <button id="sort-intelligence">Intelligenz</button>
+            </div>
+
+            <!-- Cards will be dynamically inserted here -->
+            <div id="cards-container"></div>
+            <a href="#" id="back-to-top" class="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 15l6 -6l6 6" />
+                </svg></a>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/animaldata.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

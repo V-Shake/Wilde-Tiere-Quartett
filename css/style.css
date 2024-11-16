@@ -6,15 +6,232 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "Fira Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem;
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr;
+   
 }
+
+body {
+    text-align: center;
+    background-color: var(--card-dark-color);
+    color: var(--card-background-color);
+    margin: 0;
+}
+
+header {
+    grid-column: span 4;
+    grid-row: 1;
+}
+
+nav {
+    grid-row: 1;
+    background-color: var(--card-dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+    padding: 0.6rem 8rem; 
+}
+
+#logo {
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    height: 4em;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+}
+
+main {
+    grid-column: span 4;
+    padding-top: 6rem; 
+}
+
+.overview-page {
+    background-color: transparent;
+    padding: 0; 
+    margin: 0;
+    position: relative; 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.overview-header {
+    color: var(--card-dark-color);
+    top: 9rem;
+    text-align: center;
+    margin-top: 10vh;
+    position: absolute;
+    width: 25rem;
+    text-shadow:
+    -0.5px -0.5px 0 #FFF,
+    0.5px -0.5px 0 #FFF,
+    -0.5px 0.5px 0 #FFF,
+    0.5px 0.5px 0 #FFF;
+}
+
+.overview-header h1 {
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.overview-header p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.overview-button {
+    display: inline-block; 
+    margin-top: 1rem; 
+    padding: 0.5rem 1rem; 
+    font-size: 0.8rem; 
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    text-decoration: none; 
+    color: var(--card-dark-color);
+}
+
+.overview-button:hover {
+    background-color: var(--card-dark-color);
+    color: var(--card-background-color);
+    border-color: var(--card-dark-color); 
+    text-shadow:
+    -0px -0px 0 #FFF,
+    0.5px -0px 0 #FFF,
+    -0px 0px 0 #FFF,
+    0px 0px 0 #FFF;
+}
+
+.overview-image {
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin-bottom: 2rem;
+}
+
+.faszinierende-wildtiere {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0.6rem 8rem
+}
+
+.faszinierende-wildtiere h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--card-background-color);
+}
+
+.info-rectangle {
+    display: flex;
+    margin-top: 2rem;
+    border: 1px solid var(--card-background-color);
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.text-left {
+    width: 50%;
+    text-align: left;
+    padding: 4rem;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Aligns content vertically */
+    justify-content: flex-end;
+}
+
+.text-left h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--card-background-color);
+}
+
+.text-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--card-background-color);
+}
+
+.image-right {
+    width: 50%;
+}
+
+.image-right img {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between; /* Space evenly between rectangles */
+    gap: 2.5rem; /* Add some space between rectangles */
+    margin-top: 2.5rem; /* Space above the row */
+}
+
+.info-row-rectangle {
+    background: none; /* No fill, just border */
+    border: 1px solid var(--card-background-color); /* Adjust as needed */
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.info-img {
+    flex: 1;
+    width: 100%; /* Ensure image fits within the rectangle */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; 
+}
+
+.info-title {
+    margin: 1.5rem; /* Space between image and text */
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+
 .border-bottom {
     border-bottom: var(--thick-line-strength) solid var(--card-dark-color);
 }
@@ -27,6 +244,7 @@
 
 .card-content {
     background-color: var(--card-background-color);
+    color: var(--card-dark-color);
     display: grid;
     overflow: hidden;
     width: 300px;
@@ -84,8 +302,8 @@
     text-align: left;
     padding-left: 4.8rem;
     padding-right: 1rem;
-    font-size: .66em;
-    margin-bottom: 0.4rem;
+    font-size: .68em;
+    margin-bottom: 0.6rem;
     margin-top: -0.4rem;
     /* border-top: 1px solid var(--card-dark-color); */
     /* box-shadow: 2px 0px 10px var(--card-dark-color); */
@@ -105,11 +323,11 @@
     color: var(--card-dark-color);
     font-size: 0.75em;
     font-weight: bold;
-    text-shadow: 
-        -0.5px -0.5px 0 #FFF,  
-         0.5px -0.5px 0 #FFF,
-        -0.5px  0.5px 0 #FFF,
-         0.5px  0.5px 0 #FFF; /* Add outer stroke effect */
+    text-shadow:
+        -0.5px -0.5px 0 #FFF,
+        0.5px -0.5px 0 #FFF,
+        -0.5px 0.5px 0 #FFF,
+        0.5px 0.5px 0 #FFF;
 }
 
 .group-rectangle {
@@ -139,18 +357,19 @@
     top: 0.9rem;
     right: 1rem;
     background-color: var(--card-dark-color);
-    padding: 0.1rem 0.5rem; /* Adjusted padding for a more compact fit */
+    padding: 0.1rem 0.5rem;
     border-radius: 0.4em;
     z-index: 1;
-    gap: 0.6rem; /* Control space between icon and number */
-    border: 2px solid;
+    gap: 0.6rem;
+    border: 2px solid var(--group-color);
 }
 
 .intelligence-icon {
     display: flex;
-    align-items: center; /* Aligns icon and text vertically */
+    align-items: center;
     width: 1em;
     height: 1em;
+    color: var(--group-color)
 }
 
 .intelligence-content {
@@ -165,7 +384,7 @@
     grid-row: span 2;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
     gap: 0.6em;
     padding: 0 1rem;
     margin-bottom: -0.8rem;
@@ -242,6 +461,7 @@
     text-align: center;
     padding: 0 1.5em;
     margin-top: 1.2rem;
+    background-color: var(--group-color);
 }
 
 .group-A {
@@ -249,7 +469,7 @@
 }
 
 .group-B {
-    --group-color: #e61434;
+    --group-color: #e92946;
 }
 
 .group-C {
@@ -276,37 +496,121 @@
     --group-color: #7ed3d3;
 }
 
-/* Now apply the variable to .card-number and .card-bottom for each group */
-.group-A .card-number, .group-A .card-bottom, 
-.group-B .card-number, .group-B .card-bottom,
-.group-C .card-number, .group-C .card-bottom,
-.group-D .card-number, .group-D .card-bottom, 
-.group-E .card-number, .group-E .card-bottom,
-.group-F .card-number, .group-F .card-bottom,
-.group-G .card-number, .group-G .card-bottom,
-.group-H .card-number, .group-H .card-bottom{
-    background-color: var(--group-color);
+.active-link {
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
 }
 
-.group-A .intelligence-icon,
-.group-B .intelligence-icon,
-.group-C .intelligence-icon,
-.group-D .intelligence-icon,
-.group-E .intelligence-icon,
-.group-F .intelligence-icon,
-.group-G .intelligence-icon,
-.group-H .intelligence-icon {
-    color: var(--group-color);
+/* Navigation Behavior */
+.transparent-light {
+    background-color: rgba(16, 16, 16, 0.2); 
+    transition: background-color 0.3s ease; 
 }
 
-.group-A .intelligence-box,
-.group-B .intelligence-box,
-.group-C .intelligence-box,
-.group-D .intelligence-box,
-.group-E .intelligence-box,
-.group-F .intelligence-box,
-.group-G .intelligence-box,
-.group-H .intelligence-box {
-    border-color: var(--group-color);
+.transparent-dark {
+    background-color: rgba(16, 16, 16, 0.98);
+    transition: background-color 0.3s ease; 
 }
 
+/* Font color for top of page */
+.font-black {
+    color: var(--card-dark-color);
+}
+
+/* Font color for scrolled state */
+.font-white {
+    color: var(--card-background-color);
+}
+
+
+/* Sorting Buttons*/
+#sorting-buttons span {
+    font-size: 0.8rem; 
+    margin-right: 2rem; 
+    display: inline-block; 
+    line-height: 2rem; 
+}
+
+#sorting-buttons {
+    margin: 3rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#sorting-buttons button {
+    appearance: none;
+    background-color: #060606;
+    border:  #030303; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: var(--card-background-color); 
+    cursor: pointer;
+    font-size: 0.7rem;
+    line-height: normal;
+    min-height: 20px;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform;
+}
+
+/* Hover Effect */
+#sorting-buttons button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+/* Active Button State */
+#sorting-buttons button.active {
+    background-color: var(--card-background-color);
+    color: var(--card-dark-color);
+}
+
+#sorting-buttons button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#sorting-buttons button:disabled {
+    pointer-events: none;
+    opacity: 0.6; /* Visual indication of being disabled */
+}
+
+
+/* Back to Top Button */
+#back-to-top {
+    display: none; 
+    position: fixed; 
+    right: 2.5rem;
+    padding: 0.5rem 0.6rem;
+    background-color: var(--card-background-color);
+    color: var(--card-dark-color);
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); 
+  }
+  
+  #back-to-top:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+    padding: 0.6rem 0.7rem;
+    transform: translateY(-2px);
+  }
+  
+  #back-to-top.show {
+    display: block; 
+    bottom: 3rem;
+  }
+  
+  #back-to-top.hide {
+    bottom: -3rem; 
+  }
+  

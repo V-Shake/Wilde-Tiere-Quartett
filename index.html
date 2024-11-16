@@ -6,75 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wilde Tiere Quartett</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
     <div id="wrapper">
-        <!-- <div class="card-wrapper">
-            <div class="card-content">
-                <div class="card-number border-bottom">F2</div>
-                <div class="card-title border-bottom">Nilpferd</div>
-                <img class="card-image" src="images/f2.jpg" />
-                <div class="card-trivia border-bottom">Ihre Zähne wachsen ständig nach und werden bis zu 50cm lang.
-                </div>
-                <div class="stat-box">
-                    <div class="stat-pair">
-                        <div class="stat-icon">
-                            <img src="images/icons/weight.png" alt="weight">
-                        </div>
-                        <div class="stat-content">4500</div>
+        <header>
+            <nav class="border-bottom">
+                <ul>
+                    <div id="logo">Wilde Tiere</div>
+                    <li><a class="active-link">Überblick</a></li>
+                    <li><a href="quartet.html">Quartett Karten</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="overview-page">
+            <section class="overview-header">
+                <h1>Entdecke die Welt der Wildtiere</h1>
+                <p>
+                    Willkommen zu unserer Sammlung von 32 einzigartigen Tierkarten! Jedes Tier ist mit spannenden Fakten und
+                    Details illustriert.
+                </p>
+                <a href="quartet.html" class="overview-button">Kartenansicht</a>
+            </section>
+
+            <img class="overview-image" src="images/overview.png" alt="Overview of wild animals">
+
+            <section class="faszinierende-wildtiere">
+                <h2>Faszinierende Wildtiere</h2>
+                <div class="info-rectangle">
+                    <div class="text-left">
+                        <h3>32 WildTiere</h3>
+                        <p>Jede Karte enthält spannende Infos zu Lebensraum, Gruppe, Gewicht, Alter, Länge, Geschwindigkeit und besonderen Eigenschaften der Tiere.</p>
                     </div>
-
-                    <div class="stat-pair">
-
-                        <div class="stat-icon">
-                            <img src="images/icons/length.png" alt="length">
-
-                        </div>
-                        <div class="stat-content">500</div>
-                    </div>
-
-                    <div class="stat-pair">
-                        <div class="stat-icon">
-                            <img src="images/icons/age.png" alt="max age">
-
-                        </div>
-                        <div class="stat-content">50</div>
-                    </div>
-
-                    <div class="stat-pair">
-                        <div class="stat-icon">
-                            <img src="images/icons/speed.png" alt="max speed">
-
-                        </div>
-                        <div class="stat-content">35</div>
-                    </div>
-
-                    <div class="stat-pair">
-                        <div class="stat-icon">
-                            <img src="images/icons/offspring.png" alt="offspring per cycle">
-                        </div>
-                        <div class="stat-content">1</div>
-                    </div>
-
-                    <div class="stat-pair">
-                        <div class="stat-icon">
-                            <img src="images/icons/death.png" alt="caused yearly human casualties">
-                        </div>
-                        <div class="stat-content">500</div>
+                    <div class="image-right">
+                        <img src="images/a1.jpg" alt="Wild Animal">
                     </div>
                 </div>
-            </div>
-        </div> -->
+                <div class="info-row">
+                    <!-- Left Rectangle -->
+                    <div class="info-row-rectangle">
+                        <img src="images/a2.jpg" alt="Tiergruppen" class="info-img">
+                        <h3 class="info-title">8 Tiergruppen</h3>
+                    </div>
+                    <!-- Middle Rectangle -->
+                    <div class="info-row-rectangle">
+                        <img src="images/a3.jpg" alt="Fun Facts zur Tierwelt" class="info-img">
+                        <h3 class="info-title">Fun Facts zur Tierwelt</h3>
+                    </div>
+                    <!-- Right Rectangle -->
+                    <div class="info-row-rectangle">
+                        <img src="images/a4.jpg" alt="Sortiere nach deinen Interessen" class="info-img">
+                        <h3 class="info-title">Sortiere nach deinen Interessen</h3>
+                    </div>
+                </div>
+                
+                
+            </section>
+        </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/animaldata.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
