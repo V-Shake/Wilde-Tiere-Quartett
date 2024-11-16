@@ -16,13 +16,13 @@ $(document).ready(function () {
                     <div class="groupname">${animal.groupname_german}</div>
                     <div class="intelligence-box">
                         <div class="intelligence-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bulb">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
-                <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
-                <path d="M9.7 17l4.6 0" />
-                </svg>
-                 </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bulb">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+                            <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+                            <path d="M9.7 17l4.6 0" />
+                            </svg>
+                        </div>
                         <div class="intelligence-content">${animal.intelligence}</div>
                     </div>
                     <div class="stat-box">
@@ -82,66 +82,67 @@ $(document).ready(function () {
     // Sorting button handlers
     $('#sort-groups').click(function () {
         setActiveButton('#sort-groups'); // Set "Gruppen" button active
-        animalData.sort(function (a, b) {
-            return a.group.localeCompare(b.group); // Sort by group
-        });
-        renderCards(animalData); // Re-render cards after sorting
+        renderCards([...animalData].sort((a, b) => a.group.localeCompare(b.group)));
     });
 
     $('#sort-max_weight').click(function () {
         setActiveButton('#sort-max_weight'); // Set "Max Gewicht" button active
-        animalData.sort(function (a, b) {
-            return b.max_weight - a.max_weight; // Sort by max weight (descending)
-        });
-        renderCards(animalData);
+        renderCards([...animalData].sort((a, b) => parseFloat(b.max_weight) - parseFloat(a.max_weight)));
     });
 
     $('#sort-max_age').click(function () {
         setActiveButton('#sort-max_age'); // Set "Max Alter" button active
-        animalData.sort(function (a, b) {
-            return b.max_age - a.max_age; // Sort by max age (descending)
-        });
-        renderCards(animalData);
+        renderCards([...animalData].sort((a, b) => b.max_age - a.max_age));
     });
 
     $('#sort-top_speed').click(function () {
         setActiveButton('#sort-top_speed'); // Set "Max Geschwindigkeit" button active
-        animalData.sort(function (a, b) {
-            return b.top_speed - a.top_speed; // Sort by top speed (descending)
-        });
-        renderCards(animalData);
+        renderCards([...animalData].sort((a, b) => b.top_speed - a.top_speed));
     });
 
     $('#sort-deaths').click(function () {
         setActiveButton('#sort-deaths'); // Set "Tödliche Vorfälle" button active
-        animalData.sort(function (a, b) {
-            return b.deaths - a.deaths; // Sort by deaths (descending)
-        });
-        renderCards(animalData);
+        renderCards([...animalData].sort((a, b) => b.deaths - a.deaths));
     });
 
     $('#sort-max_length').click(function () {
         setActiveButton('#sort-max_length'); // Set "Max Länge" button active
-        animalData.sort(function (a, b) {
-            return b.max_length - a.max_length; // Sort by max length (descending)
-        });
-        renderCards(animalData);
+        renderCards([...animalData].sort((a, b) => b.max_length - a.max_length));
     });
 
     $('#sort-litter_size').click(function () {
         setActiveButton('#sort-litter_size'); // Set "Wurfgröße" button active
-        animalData.sort(function (a, b) {
-            return b.litter_size - a.litter_size; // Sort by litter size (descending)
-        });
-        renderCards(animalData);
+        renderCards([...animalData].sort((a, b) => b.litter_size - a.litter_size));
     });
 
     $('#sort-intelligence').click(function () {
         setActiveButton('#sort-intelligence'); // Set "Intelligenz" button active
-        animalData.sort(function (a, b) {
-            return b.intelligence - a.intelligence; // Sort by intelligence (descending)
+        renderCards([...animalData].sort((a, b) => b.intelligence - a.intelligence));
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const backToTopButton = document.getElementById('back-to-top');
+
+    // Show/hide button on scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) { // Show button after 200px scroll
+            backToTopButton.classList.add('show');
+            backToTopButton.classList.remove('hide');
+        } else {
+            backToTopButton.classList.add('hide');
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    // Scroll to top functionality
+    backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Smooth scroll to top
         });
-        renderCards(animalData);
     });
 });
 
