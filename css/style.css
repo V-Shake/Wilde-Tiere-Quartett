@@ -275,6 +275,8 @@ main {
     margin: 0; 
     width: 350px;
     height: 500px; 
+    cursor: pointer;
+    position: relative;
 }
 
 .card-content {
@@ -288,8 +290,14 @@ main {
     grid-template-rows: repeat(12, 1fr);
     border-radius: 1em;
     position: relative;
+    transition: transform 0.3s ease-in-out;
 }
 
+.card-wrapper:hover {
+    transform: translateY(-10px); 
+    border: solid 1px var(--card-background-color);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+}
 
 .card-image {
     grid-column: span 6;
