@@ -13,12 +13,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto 1fr;
-    grid-gap: 1rem;
+   
 }
 
 body {
-    background-color: var(--card-dark-color);
     text-align: center;
+    background-color: var(--card-dark-color);
     color: var(--card-background-color);
     margin: 0;
 }
@@ -30,7 +30,7 @@ header {
 
 nav {
     grid-row: 1;
-    background-color: #232323;
+    background-color: var(--card-dark-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,13 +46,12 @@ nav {
     text-transform: uppercase;
     margin-right: auto;
     font-weight: 600;
-    color: white;
 }
 
 ul {
     list-style-type: none;
     text-align: center;
-    padding:0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,12 +63,163 @@ ul {
 
 nav ul li a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255);
 }
 
 main {
     grid-column: span 4;
-    padding-top: 8rem; /* Adjust padding based on the height of the nav */
+    padding-top: 6rem; 
+}
+
+.overview-page {
+    background-color: transparent;
+    padding: 0; 
+    margin: 0;
+    position: relative; 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.overview-header {
+    color: var(--card-dark-color);
+    top: 13em;
+    text-align: center;
+    margin-top: 10vh;
+    position: absolute;
+    width: 25rem;
+}
+
+.overview-header h1 {
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.overview-header p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.overview-button {
+    display: inline-block; 
+    margin-top: 1rem; 
+    padding: 0.5rem 1rem; 
+    font-size: 0.8rem; 
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    text-decoration: none; 
+    color: var(--card-dark-color);
+}
+
+.overview-button:hover {
+    background-color: var(--card-dark-color);
+    color: var(--card-background-color);
+    border-color: var(--card-dark-color); 
+}
+
+.overview-image {
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin-bottom: 2rem;
+}
+
+.faszinierende-wildtiere {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0.6rem 8rem
+}
+
+.faszinierende-wildtiere h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--card-background-color);
+}
+
+.info-rectangle {
+    display: flex;
+    margin-top: 2rem;
+    border: 1px solid var(--card-background-color);
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.text-left {
+    width: 50%;
+    text-align: left;
+    padding: 4rem;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Aligns content vertically */
+    justify-content: flex-end;
+}
+
+.text-left h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--card-background-color);
+}
+
+.text-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--card-background-color);
+}
+
+.image-right {
+    width: 50%;
+}
+
+.image-right img {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between; /* Space evenly between rectangles */
+    gap: 2.5rem; /* Add some space between rectangles */
+    margin-top: 2.5rem; /* Space above the row */
+}
+
+.info-row-rectangle {
+    background: none; /* No fill, just border */
+    border: 1px solid var(--card-background-color); /* Adjust as needed */
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.info-img {
+    flex: 1;
+    width: 100%; /* Ensure image fits within the rectangle */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; 
+}
+
+.info-title {
+    margin: 1.5rem; /* Space between image and text */
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold;
+    /* text-transform: uppercase; */
 }
 
 .border-bottom {
@@ -168,7 +318,6 @@ main {
         0.5px -0.5px 0 #FFF,
         -0.5px 0.5px 0 #FFF,
         0.5px 0.5px 0 #FFF;
-    /* Add outer stroke effect */
 }
 
 .group-rectangle {
@@ -199,18 +348,15 @@ main {
     right: 1rem;
     background-color: var(--card-dark-color);
     padding: 0.1rem 0.5rem;
-    /* Adjusted padding for a more compact fit */
     border-radius: 0.4em;
     z-index: 1;
     gap: 0.6rem;
-    /* Control space between icon and number */
     border: 2px solid var(--group-color);
 }
 
 .intelligence-icon {
     display: flex;
     align-items: center;
-    /* Aligns icon and text vertically */
     width: 1em;
     height: 1em;
     color: var(--group-color)
@@ -341,16 +487,61 @@ main {
 }
 
 .active-link {
-    color: white;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
 }
 
 /* Navigation Behavior */
 .transparent-light {
-    background-color: rgba(14, 14, 14, 0.05); 
+    background-color: rgba(16, 16, 16, 0.2); 
     transition: background-color 0.3s ease; 
 }
 
 .transparent-dark {
-    background-color: rgba(14, 14, 14, 0.95);
+    background-color: rgba(16, 16, 16, 0.98);
     transition: background-color 0.3s ease; 
+}
+
+/* Font color for top of page */
+.font-black {
+    color: var(--card-dark-color);
+}
+
+/* Font color for scrolled state */
+.font-white {
+    color: var(--card-background-color);
+}
+
+
+/* Sorting Buttons */
+#sorting-buttons {
+    margin: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#sorting-buttons button {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    background-color: var(--card-dark-color);
+    color: var(--card-background-color);
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* For the active state, keep the shadow but remove the highlight */
+#sorting-buttons button.active {
+    background-color: #007BFF; /* Active background color */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keep the shadow */
+    outline: none; /* Remove the outline */
+}
+
+/* Remove the outline and focus highlight while keeping the shadow */
+#sorting-buttons button:focus, #sorting-buttons button:active {
+    outline: none; /* Remove the highlight outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Keep the shadow */
 }
