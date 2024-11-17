@@ -2,7 +2,7 @@ $(document).ready(function () {
     let animalData = data; // Assuming 'data' is already available
 
     // Function to render cards based on the sorted data
-    function renderCards(data) {
+    function renderCards(data, highlight = '') {
         $('#cards-container').empty(); // Clear current cards
 
         $.each(data, function (index, animal) {
@@ -33,37 +33,37 @@ $(document).ready(function () {
                                         <div class="stat-icon">
                                             <img src="images/icons/weight.svg" alt="weight">
                                         </div>
-                                        <div class="stat-content">${animal.max_weight}</div>
+                                        <div class="stat-content ${highlight === 'weight' ? 'highlight' : ''}">${animal.max_weight}</div>
                                     </div>
                                     <div class="stat-pair">
                                         <div class="stat-icon">
                                             <img src="images/icons/length.svg" alt="length">
                                         </div>
-                                        <div class="stat-content">${animal.max_length}</div>
+                                        <div class="stat-content ${highlight === 'length' ? 'highlight' : ''}">${animal.max_length}</div>
                                     </div>
                                     <div class="stat-pair">
                                         <div class="stat-icon">
                                             <img src="images/icons/age.svg" alt="max age">
                                         </div>
-                                        <div class="stat-content">${animal.max_age}</div>
+                                        <div class="stat-content ${highlight === 'age' ? 'highlight' : ''}">${animal.max_age}</div>
                                     </div>
                                     <div class="stat-pair">
                                         <div class="stat-icon">
                                             <img src="images/icons/speed.svg" alt="max speed">
                                         </div>
-                                        <div class="stat-content">${animal.top_speed}</div>
+                                        <div class="stat-content ${highlight === 'speed' ? 'highlight' : ''}">${animal.top_speed}</div>
                                     </div>
                                     <div class="stat-pair">
                                         <div class="stat-icon">
                                             <img src="images/icons/offspring.svg" alt="offspring per cycle">
                                         </div>
-                                        <div class="stat-content">${animal.litter_size}</div>
+                                        <div class="stat-content ${highlight === 'litter_size' ? 'highlight' : ''}">${animal.litter_size}</div>
                                     </div>
                                     <div class="stat-pair">
                                         <div class="stat-icon">
                                             <img src="images/icons/death.svg" alt="caused yearly human casualties">
                                         </div>
-                                        <div class="stat-content">${animal.deaths}</div>
+                                        <div class="stat-content ${highlight === 'deaths' ? 'highlight' : ''}">${animal.deaths}</div>
                                     </div>
                                 </div>
                                 <div class="card-bottom">${animal.continents}</div>
@@ -112,32 +112,33 @@ $(document).ready(function () {
 
     $('#sort-max_weight').click(function () {
         setActiveButton('#sort-max_weight'); // Set "Max Gewicht" button active
-        renderCards([...animalData].sort((a, b) => parseFloat(b.max_weight) - parseFloat(a.max_weight)));
-    });
-
-    $('#sort-max_age').click(function () {
-        setActiveButton('#sort-max_age'); // Set "Max Alter" button active
-        renderCards([...animalData].sort((a, b) => b.max_age - a.max_age));
-    });
-
-    $('#sort-top_speed').click(function () {
-        setActiveButton('#sort-top_speed'); // Set "Max Geschwindigkeit" button active
-        renderCards([...animalData].sort((a, b) => b.top_speed - a.top_speed));
-    });
-
-    $('#sort-deaths').click(function () {
-        setActiveButton('#sort-deaths'); // Set "Tödliche Vorfälle" button active
-        renderCards([...animalData].sort((a, b) => b.deaths - a.deaths));
+        renderCards([...animalData].sort((a, b) => parseFloat(b.max_weight) - parseFloat(a.max_weight)), 'weight');
     });
 
     $('#sort-max_length').click(function () {
         setActiveButton('#sort-max_length'); // Set "Max Länge" button active
-        renderCards([...animalData].sort((a, b) => b.max_length - a.max_length));
+        renderCards([...animalData].sort((a, b) => parseFloat(b.max_length) - parseFloat(a.max_length)), 'length');
+    });
+
+
+    $('#sort-max_age').click(function () {
+        setActiveButton('#sort-max_age'); // Set "Max Alter" button active
+        renderCards([...animalData].sort((a, b) => parseFloat(b.max_age) - parseFloat(a.max_age)), 'age');
+    });
+
+    $('#sort-top_speed').click(function () {
+        setActiveButton('#sort-top_speed'); // Set "Max Geschwindigkeit" button active
+        renderCards([...animalData].sort((a, b) => parseFloat(b.top_speed) - parseFloat(a.top_speed)), 'speed');
     });
 
     $('#sort-litter_size').click(function () {
         setActiveButton('#sort-litter_size'); // Set "Wurfgröße" button active
-        renderCards([...animalData].sort((a, b) => b.litter_size - a.litter_size));
+        renderCards([...animalData].sort((a, b) => parseFloat(b.litter_size) - parseFloat(a.litter_size)), 'litter_size');
+    });
+
+    $('#sort-deaths').click(function () {
+        setActiveButton('#sort-deaths'); // Set "Tödliche Vorfälle" button active
+        renderCards([...animalData].sort((a, b) => parseFloat(b.deaths) - parseFloat(a.deaths)), 'deaths');
     });
 
     $('#sort-intelligence').click(function () {

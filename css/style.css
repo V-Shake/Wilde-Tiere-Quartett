@@ -92,41 +92,23 @@ main {
 
 .overview-header {
     color: var(--card-dark-color);
-    top: 7rem;
+    top: 15rem;
     text-align: center;
-    margin-top: 10vh;
     position: absolute;
-    width: 25rem;
+    width: 38rem;
 }
 
 .overview-header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    text-shadow:
-    -0.5px -0.5px 0 #FFF,
-    0.5px -0.5px 0 #FFF,
-    -0.5px 0.5px 0 #FFF,
-    0.5px 0.5px 0 #FFF;
-}
-
-.overview-header p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
-    text-shadow:
-    -0.5px -0.5px 0 #FFF,
-    0.5px -0.5px 0 #FFF,
-    -0.5px 0.5px 0 #FFF,
-    0.5px 0.5px 0 #FFF;
 }
 
 .overview-button {
     display: inline-block;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -159,6 +141,14 @@ main {
     color: var(--card-background-color);
 }
 
+.faszinierende-wildtiere p {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    margin: 0 auto 5rem auto;
+    width: 50rem;
+    line-height: 1.8;
+}
+
 .info-rectangle {
     display: flex;
     margin-top: 2rem;
@@ -172,11 +162,9 @@ main {
 .text-left {
     width: 50%;
     text-align: left;
-    padding: 4rem;
+    padding: 6rem;
     display: flex;
-    /* Enables flexbox layout */
     flex-direction: column;
-    /* Aligns content vertically */
     justify-content: flex-end;
 }
 
@@ -184,14 +172,17 @@ main {
     font-size: 1.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--card-background-color);
+    width: 90%;
 }
 
 .text-left p {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--card-background-color);
+    margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .image-right {
@@ -283,7 +274,7 @@ main {
 }
 
 .group-H {
-    --group-color: #7ed3d3;
+    --group-color: #2cc7db;
 }
 
 #cards-container {
@@ -776,6 +767,10 @@ main {
     /* Visual indication of being disabled */
 }
 
+.highlight {
+    color: var(--group-color);
+    font-weight: bold;
+}
 
 /* Back to Top Button */
 #back-to-top {

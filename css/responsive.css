@@ -1,32 +1,79 @@
-@media screen and (max-width: 600px) {
-    .overview-header h1 {
-        font-size: 1rem; 
-    }
-    .overview-header p {
-        font-size: 0.8rem;
-    }
-    #cards-container {
-        grid-template-columns: repeat(1, 1fr); 
-        justify-items: center; 
-    }
-}
-
 @media (max-width: 1550px) {
     #cards-container {
         grid-template-columns: repeat(3, 1fr);
-        
+    }
+
+    .overview-header {
+        top: 10rem;
+        width: 25rem;
+    }
+
+    .overview-header h1 {
+        font-size: 3rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .overview-button {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
     }
 }
 
 @media (max-width: 1170px) {
     #cards-container {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         max-width: 800px
+    }
+
+    .overview-header {
+        top: 7rem;
+        width: 20rem;
+    }
+
+    .overview-header h1 {
+        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .overview-button {
+        font-size: 0.7rem;
+        margin-top: 0.3rem;
     }
 }
 
 @media (max-width: 760px) {
     #cards-container {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .overview-header {
+        top: 5rem;
+        width: 15rem;
+    }
+
+    .overview-header h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .overview-button {
+        font-size: 0.6rem;
+        margin-top: 0;
+        padding: 0.4rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .overview-header h1 {
+        font-size: 1rem;
+    }
+
+    .overview-header p {
+        font-size: 0.8rem;
+    }
+
+    #cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
 }
