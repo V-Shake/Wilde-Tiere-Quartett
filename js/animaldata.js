@@ -42,7 +42,16 @@ const data = [
     "max_length": 150,
     "litter_size": 5,
     "continents": "Africa, Asia",
-    "intelligence": 5
+    "intelligence": 5,
+    "habitat": "Grasländer, Savannen, Halbwüsten",
+    "fun_facts": [
+      "Geparde können Geschwindigkeiten von bis zu 120 km/h erreichen und sind damit die schnellsten Landtiere der Welt.",
+      "Im Gegensatz zu vielen anderen Raubtieren sind Geparde tagaktiv und jagen hauptsächlich am frühen Morgen oder späten Nachmittag.",
+      "Der lange Schwanz hilft ihnen, beim Sprinten das Gleichgewicht zu halten und schnell die Richtung zu wechseln",
+      "Weibliche Geparde leben meist allein mit ihren Jungen, während Männchen oft in kleinen Gruppen, sogenannten „Brüdergruppen“, zusammenleben.",
+      "Geparde haben schwarze Tränenstreifen, die das Sonnenlicht reflektieren und ihnen helfen, besser zu sehen.",
+
+    ]
   },
   {
     "id": 3,
@@ -61,7 +70,15 @@ const data = [
     "max_length": 290,
     "litter_size": 4,
     "continents": "Asia",
-    "intelligence": 7
+    "intelligence": 7,
+    "habitat": "Tropische Regenwälder, Sumpfgebiete, Grasländer",
+    "fun_facts": [
+      "Tiger sind die größten Katzen der Welt.",
+      "Jeder Tiger hat ein einzigartiges Muster aus Streifen, ähnlich wie Fingerabdrücke bei Menschen. Diese Streifen helfen ihnen, sich in ihrer Umgebung zu tarnen.",
+      "Tiger sind Einzelgänger und jagen meist allein, vor allem nachts. Sie nutzen ihre Tarnung, um sich an ihre Beute heranzuschleichen.",
+      "Ein Tiger kann mit seinem Gebrüll bis zu drei Kilometer weit gehört werden. Es ist so kraftvoll, dass es seine Beute lähmen kann.",
+      "Tiger können sich mit Löwen kreuzen, was zu Hybriden wie Liger (Tiger-Männchen und Löwin) und Töwe (Tiger-Weibchen und Löwen-Männchen) führt."
+    ]
   },
   {
     "id": 4,
@@ -80,7 +97,14 @@ const data = [
     "max_length": 160,
     "litter_size": 3,
     "continents": "Africa, Asia",
-    "intelligence": 7
+    "intelligence": 7,
+    "habitat": "Savannen, Halbwüsten, Buschsteppen",
+    "fun_facts": [
+      "Tüpfelhyänen leben in großen Gruppen, sogenannten Clans, die aus bis zu 80 Tieren bestehen können. Diese Clans bestehen meist aus verwandten Weibchen und einigen Männchen.",
+      "Hyänen haben extrem starke Kiefer, die es ihnen ermöglichen, selbst große Knochen zu zermahlen und zu fressen. Sie sind auch dafür bekannt, Aas aus einer Entfernung von bis zu zehn Kilometern zu riechen.",
+      "Hyänen markieren ihre Reviere mit einem stark riechenden Sekret aus ihren Analdrüsen.",
+      "Während sie oft Aas fressen, jagen Tüpfelhyänen auch aktiv mittelgroße bis große Huftiere wie Zebras und Gazellen. Sie sind dafür bekannt, Beute von Löwen zu stehlen, wenn diese sich nicht wehren können.", 
+    ]
   },
   {
     "id": 5,
@@ -99,7 +123,15 @@ const data = [
     "max_length": 15,
     "litter_size": 1840,
     "continents": "Americas",
-    "intelligence": 2
+    "intelligence": 2,
+    "habitat": "Regenwälder, Bananenplantagen, Offene Flächen",
+    "fun_facts": [
+      "Die Brasilianische Wanderspinne gilt als eine der giftigsten Spinnen der Welt. Ihr Gift ist bis zu 20-mal tödlicher als das einer Schwarzen Witwe.", 
+      "Wanderspinnen zeigen ein aggressives Verhalten, wenn sie sich bedroht fühlen. Sie richten sich auf und zeigen ihre rötlichen Giftklauen, bevor sie beißen.",
+      "Im Gegensatz zu vielen anderen Spinnenarten baut die Wanderspinne kein Netz. Sie ist eine Jagdspinne, die aktiv auf Beute wie Insekten, Frösche und sogar Mäuse lauert",
+      "Diese Spinnen sind sehr schnell und können bis zu 50 Zentimeter weit springen, was ihnen hilft, ihre Beute zu fangen oder sich vor Bedrohungen zu schützen",
+      "Wanderspinnen sind sehr aggressiv und greifen schnell an, wenn sie sich bedroht fühlen."
+    ]
   },
   {
     "id": 6,
@@ -118,7 +150,16 @@ const data = [
     "max_length": 21,
     "litter_size": 50,
     "continents": "all",
-    "intelligence": 2
+    "intelligence": 2,
+    "habitat": "Wüsten, Tropen und Subtropen, Halbwüsten, Küstenregionen, Höhlen und Bäume, Savannen",
+    "fun_facts": [
+      "Skorpione sind nachtaktive Tiere, die tagsüber in Höhlen, unter Steinen oder in Spalten schlafen.",
+      "Alle Skorpione besitzen ein Gift, aber nur etwa 50 Arten sind für Menschen potenziell tödlich.",
+      "Skorpione sind lebendgebärend. Nach der Geburt tragen die kleinen Skorpione einige Zeit auf dem Rücken der Mutter, bis sie selbstständig werden.", 
+      "Einige Skorpionarten können bis zu zwei Jahre ohne Nahrung überleben, indem sie ihren Stoffwechsel verlangsamen und ihren Energieverbrauch minimieren.",
+      "Skorpione sind sehr widerstandsfähige Tiere, die in extremen Umgebungen leben können.",
+      "Die meisten Skorpione sind Einzelgänger und treffen sich nur zur Fortpflanzung, die oft mit einem aufwendigen „Hochzeitstanz“ verbunden ist."
+    ]
   },
   {
     "id": 7,
@@ -137,7 +178,13 @@ const data = [
     "max_length": 1,
     "litter_size": 400,
     "continents": "all",
-    "intelligence": 1
+    "intelligence": 1,
+    "habitat": "Wassernähe, Feuchte Gebiete, Städtische Gebiete",
+    "fun_facts": [
+      "Nur die weiblichen Moskitos stechen, um Blut zu saugen, das sie für die Entwicklung ihrer Eier benötigen. Männliche Moskitos ernähren sich hauptsächlich von Nektar und anderen Zuckern.",
+      "Mücken sind die tödlichsten Tiere der Welt, da sie Krankheiten wie Malaria, Dengue-Fieber, Zika-Virus und Gelbfieber übertragen.",
+      "Moskitos haben einen ausgeprägten Geruchssinn und können Menschen aus bis zu 30 Metern Entfernung riechen. Sie werden von Körpergerüchen, Kohlendioxid und Wärme angezogen.",  
+    ]
   },
   {
     "id": 8,
@@ -156,7 +203,17 @@ const data = [
     "max_length": 6,
     "litter_size": 35,
     "continents": "Americas",
-    "intelligence": 2
+    "intelligence": 2,
+    "habitat": "Regenwälder, Amazonasgebiet, Bromelien-Zonen",
+    "fun_facts": [
+      "Pfeilgiftfrösche sind bekannt für ihre leuchtenden Farben (rot, gelb, blau, grün),  die Fressfeinden signalisieren: „Ich bin giftig!“.",
+      "Der Schreckliche Pfeilgiftfrosch zählt zu den giftigsten Fröschen der Welt. Sein Gift kann innerhalb von Minuten tödlich sein und reicht aus, um bis zu 12 Menschen zu töten.",
+      "Das Gift stammt von den Insekten, die sie fressen, wie Ameisen und Termiten. In Gefangenschaft verlieren sie ihr Gift, da sie nicht die gleichen Nahrungsquellen haben.",
+      "Die Chocó-Ureinwohner Kolumbiens nutzen das Gift dieser Frösche, um ihre Jagdpfeile zu tränken.",
+      "Sie sind fürsorgliche Eltern. Sie tragen ihre Kaulquappen auf dem Rücken zu sicheren Wasserstellen in den Baumkronen, um sie vor Fressfeinden zu schützen.",
+      "Die Goldbauchnatter ist der einzige natürliche Feind des Pfeilgiftfrosches und hat eine Resistenz gegen sein Gift entwickelt."
+    ]
+
   },
   {
     "id": 9,
@@ -175,7 +232,17 @@ const data = [
     "max_length": 610,
     "litter_size": 80,
     "continents": "Africa, Asia, Americas, Oceania",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Flüssen, Seen, Sümpfen, Bächen, Brackwasser",
+    "fun_facts": [
+      "Krokodile existieren seit über 200 Millionen Jahren und gelten als lebende Fossilien. Sie waren bereits zur Zeit der Dinosaurier auf der Erde.",
+      "Sie sind Lauerjäger und können blitzschnell aus dem Wasser schnappen, um ihre Beute zu fangen.",
+      "Sie fressen Steine, um ihre Dichte zu erhöhen und besser im Wasser zu sinken. Dies hilft ihnen, unbemerkt auf Beute zu lauern.",
+      "Sie zeigen auch soziale Verhaltensweisen, spielen und kommunizieren durch verschiedene Laute.",
+      "Krokodile legen 20–80 Eier, deren Nesttemperatur das Geschlecht bestimmt; wärmeres Nest führt meist zu mehr Männchen.",
+      "Das Leistenkrokodil kann bis zu einem Jahr ohne Nahrung überleben dank Fettreserven im Schwanz. Sie benötigen nur etwa 10% ihrer Nahrung, um ihre Körpertemperatur aufrechtzuerhalten.",
+      "Ihre 60–70 Zähne wachsen ständig nach. Wenn ein Zahn verloren geht, wird er schnell ersetzt."
+    ]
   },
   {
     "id": 10,
@@ -194,7 +261,15 @@ const data = [
     "max_length": 550,
     "litter_size": 40,
     "continents": "Africa, Asia",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Savannen, Wäldern, landwirtschaftlich genutzten Flächen, tropischen Regenwäldern, Mangrovensümpfen",
+    "fun_facts": [
+      "Kobras besitzen starkes, neurotoxisches Gift, das unbehandelt tödlich sein kann.",
+      "Sie bilden bei Bedrohung eine auffällige „Kapuze“, um Feinde abzuschrecken.",
+      "Königskobras sind ungewöhnlich unter den Schlangen, da das Weibchen sich aktiv um die Brut kümmert. Es baut ein Nest aus Blättern und bewacht es bis zum Schlüpfen der Eier.",
+      "Der Glaube, dass Schlangenbeschwörer Kobras mit Musik hypnotisieren können, ist ein Mythos. Kobras sind taub und reagieren nicht auf Musik, sondern auf die Bewegungen des Instruments.",
+      "Kobras sind gute Schwimmer und können sowohl an Land als auch im Wasser jagen. Sie sind oft in der Nähe von Gewässern zu finden.",
+    ]
   },
   {
     "id": 11,
@@ -213,7 +288,15 @@ const data = [
     "max_length": 300,
     "litter_size": 30,
     "continents": "Asia",
-    "intelligence": 3
+    "intelligence": 3,
+    "habitat": "Savannen, Monsunwälder, Grasland, Küstengebiete, tropische Wälder, Mangrovensümpfe, felsige Ufer",
+    "fun_facts": [
+      "Komodowarane sind die größten lebenden Echsen.",
+      "Komodowarane sind opportunistische Jäger und ernähren sich von einer Vielzahl von Tieren, einschließlich Hirschen, Wildschweinen, und sogar anderen Komodowaranen. ",
+      "Komodowarane haben eine ausgezeichnete Sehkraft und können Beute aus bis zu 300 Metern Entfernung erkennen.",
+      "Komodowarane sind ausgezeichnete Schwimmer und können große Distanzen im Wasser zurücklegen, um andere Inseln zu erreichen.",
+      "Nach dem Schlüpfen klettern die jungen Komodowarane sofort in Bäume, um sich vor ihren größeren Artgenossen zu schützen, die sie fressen könnten.",
+    ]
   },
   {
     "id": 12,
@@ -232,7 +315,15 @@ const data = [
     "max_length": 130,
     "litter_size": 14,
     "continents": "Americas",
-    "intelligence": 3
+    "intelligence": 3,
+    "habitat": "Wäldern, Wüsten, Savannen, Sümpfen, Seen, Flüssen",
+    "fun_facts": [
+      "Schildkröten existieren seit über 220 Millionen Jahren und gehören zu den ältesten Reptilien der Erde. ",
+      "Viele Schildkrötenarten halten während extremer Wetterbedingungen eine Sommer- oder Winterstarre. Dies hilft ihnen, in heißen oder kalten Klimazonen zu überleben.",
+      "Schildkröten haben vier verschiedene Farbrezeptoren und können infrarotes und ultraviolettes Licht wahrnehmen, was ihnen eine bessere Sicht als Menschen ermöglicht.",
+      " Einige Schildkrötenarten, wie die griechische Landschildkröte, können das Sperma mehrerer Männchen über Jahre hinweg speichern und befruchtete Eier legen.",
+      "Schildkröten kommunizieren miteinander, um den Schlupf ihrer Eier zu synchronisieren, was sicherstellt, dass die Jungtiere gleichzeitig schlüpfen.",
+    ]
   },
   {
     "id": 13,
@@ -251,7 +342,13 @@ const data = [
     "max_length": 450,
     "litter_size": 15000000,
     "continents": "Americas, Europe,  Oceania",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Ozeane, Meere",
+    "fun_facts": [
+      "Der Schwertfisch besitzt ein schwertartiges Rostrum, das bis zu ein Drittel seiner Körperlänge ausmacht. Er nutzt dieses „Schwert“, um Beute zu betäuben oder in Schwärmen zu verletzen.",
+      "Schwertfische leben in der Regel als Einzelgänger, außer während der Fortpflanzungszeit. Sie sind sehr territorial und suchen oft tiefere Gewässer auf, um ihre Beute zu fangen.", 
+      " Schwertfische sind bekannt für ihre Schnelligkeit und Agilität im Wasser. Sie können Geschwindigkeiten von bis zu 97 km/h erreichen, was sie zu einem der schnellsten Fische im Ozean macht.",
+    ]
   },
   {
     "id": 14,
@@ -270,7 +367,14 @@ const data = [
     "max_length": 90,
     "litter_size": 20,
     "continents": "North America, Europe, Asia, Africa",
-    "intelligence": 1
+    "intelligence": 1,
+    "habitat": "Meeren, Süßwasser, feuchten Wäldern, Weinbergen, Wiesen, Gewässerrändern, trockene Gebieten",
+    "fun_facts": [
+      "Es gibt weltweit über 110.000 Arten von Schnecken.",
+      "Schnecken sind Zwitter und können sich selbst befruchten, aber sie bevorzugen die Paarung mit einem Partner.",
+      "Schnecken haben einen weichen Körper ohne Skelett, der von einer schützenden Schale umgeben sein kann. ",
+      "Beim Kriechen hinterlassen Schnecken eine Schleimspur, die ihnen hilft, sich fortzubewegen und gleichzeitig ihre Körperfeuchtigkeit zu bewahren."
+    ]
   },
   {
     "id": 15,
@@ -289,7 +393,13 @@ const data = [
     "max_length": 1400,
     "litter_size": 10000000,
     "continents": "South America, Africa, Oceania",
-    "intelligence": 6
+    "intelligence": 6,
+    "habitat": "Ozeane, Meere",
+    "fun_facts": [
+      "Koloss-Kalmare sind nicht der bösartigste Fisch im Meer, da sie von 17 Arten von Vögeln, Walen und Fischen gejagt werden. Besonders Pottwale, die über 20 m lang werden, ernähren sich häufig von ihnen.",
+      "Die Augen von Koloss-Kalmaren sind so groß wie ein Basketball mit einem Durchmesser von 27 cm und dienen nicht primär der Nahrungssuche im Dunkeln, sondern dem Erkennen von Pottwalen in der Tiefe.",
+      "Koloss-Kalmare sind Kannibalen, weshalb sie ihre Eier möglicherweise in seichteren Gewässern ablegen, um dem Kannibalismus durch erwachsene Artgenossen zu entgehen. Erwachsene Kalmare enthalten oft Überreste anderer Tintenfische.",
+    ]
   },
   {
     "id": 16,
@@ -308,7 +418,15 @@ const data = [
     "max_length": 360,
     "litter_size": 1,
     "continents": "Americas, Europe, Asia",
-    "intelligence": 6
+    "intelligence": 6,
+    "habitat": "Treibereis, Eisschollen, flache Küstenregionen",
+    "fun_facts": [
+      "Walrosse leben in großen Herden, die aus Hunderten bis Tausenden von Tieren bestehen können. Diese Herden sind oft nach Geschlechtern getrennt, und während der Paarungszeit kämpfen Männchen um das Recht, sich mit Weibchen zu paaren.",
+      "Weibliche Walrosse bringen nach einer Tragzeit von etwa 11 bis 16 Monaten ein Kalb zur Welt, das bereits bei der Geburt etwa 60 kg wiegt. Die Mutter säugt ihr Kalb bis zu einem Jahr lang.",
+      "Walrosse können bis zu 84 Stunden wach bleiben, bevor sie für kurze Zeit schlafen. Sie ruhen sich oft auf Eisschollen aus und können in dieser Zeit auch kuscheln, um Wärme zu teilen.",
+      "Diese Tiere sind ausgezeichnete Taucher und können in Tiefen von bis zu 500 bis 600 Metern tauchen, wobei sie bis zu 30 Minuten unter Wasser bleiben können.",
+      "Walrosse kommunizieren durch eine Vielzahl von Lauten wie Grunzen und Brüllen, die bis zu 1,5 Kilometer weit gehört werden können.",
+    ]
   },
   {
     "id": 17,
@@ -327,7 +445,13 @@ const data = [
     "max_length": 1450,
     "litter_size": 300,
     "continents": "Americas, Africa, Oceania",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "tropischen und subtropischen Gewässern, Ozeane, Atlantiks",
+    "fun_facts": [
+      "Trotz seiner Größe ist er für den Menschen völlig ungefährlich.",
+      "Im Gegensatz zu vielen anderen Haien schwimmen Walhaie nicht nur mit ihrer Schwanzflosse, sondern neigen ihren gesamten Körper von Seite zu Seite, während sie sich mit einer Geschwindigkeit von bis zu 5 km/h fortbewegen.",
+      "Diese Tiere sind Wanderer und legen große Strecken zurück. Ein weiblicher Walhai wurde per Satellitentracker verfolgt und legte über 20.000 Kilometer im Pazifik zurück."
+    ]
   },
   {
     "id": 18,
@@ -346,7 +470,14 @@ const data = [
     "max_length": 600,
     "litter_size": 14,
     "continents": "Americas, Africa, Oceania",
-    "intelligence": 5
+    "intelligence": 5,
+    "habitat": "Ozeane, gemäßigten und subtropischen Gewässern, Küstennähe",
+    "fun_facts": [
+      "Die auffällige Färbung des Weißen Hais – ein hellgrauer Rücken und ein weißer Bauch – ermöglicht eine hervorragende Tarnung im Wasser. Diese Färbung hilft ihnen, sich sowohl vor Beute als auch vor Fressfeinden zu verstecken.",
+      "Weiße Haie besitzen außergewöhnliche Sinne. Sie können selbst einen Tropfen Blut in einem Schwimmbecken riechen und haben die Fähigkeit, elektrische Felder wahrzunehmen, die von der Bewegung ihrer Beute erzeugt werden.",
+      "Ihr Gebiss ist als „Revolvergebiss“ bekannt, da sie mehrere Reihen von Zähnen haben. Wenn ein Zahn ausfällt, wächst sofort ein neuer nach. Ein Weißer Hai hat zwischen 23 und 28 Zähnen im Oberkiefer und bis zu 26 im Unterkiefer.",
+      "Ein bemerkenswertes Phänomen bei Weißen Haien ist, dass die Embryonen sich im Mutterleib gegenseitig fressen können, was als intrauteriner Kannibalismus bezeichnet wird. Dies führt dazu, dass nur die stärksten Nachkommen überleben.",
+    ]
   },
   {
     "id": 19,
@@ -365,7 +496,13 @@ const data = [
     "max_length": 3360,
     "litter_size": 1,
     "continents": "North America, Europe, Oceania, Antarctica",
-    "intelligence": 8
+    "intelligence": 8,
+    "habitat": "alle Weltmeeren",
+    "fun_facts": [
+      "Der Blauwal ist das größte Tier, das jemals auf der Erde gelebt hat.",
+      "Das Herz eines Blauwals wiegt etwa 400 Kilogramm, was ungefähr dem Gewicht eines Kleinwagens entspricht. Es schlägt nur etwa 6 Mal pro Minute, pumpt dabei jedoch mehrere Tausend Liter Blut durch den Körper.",
+      "Diese Riesen ernähren sich hauptsächlich von Krill, kleinen Krebstieren, und können täglich bis zu 4 Tonnen Krill fressen. Sie nutzen ihre Barten, um Wasser zu filtern und die Beute einzufangen.",
+    ]
   },
   {
     "id": 20,
@@ -384,7 +521,14 @@ const data = [
     "max_length": 950,
     "litter_size": 1,
     "continents": "North America, Europe, Oceania, Antarctica",
-    "intelligence": 10
+    "intelligence": 10,
+    "habitat": "alle Ozeanen",
+    "fun_facts": [
+      "Orcas sind für ihre hohe Intelligenz bekannt. Sie jagen in Gruppen, sogenannten Schulen, und nutzen komplexe Jagdtechniken, um Beute wie Fische, Robben und andere Wale zu fangen.",
+      "Orcas leben in matriarchalen Gruppen, die Wissen und Sprache über Generationen weitergeben. Weibchen bleiben meist in ihrer Geburtsgruppe, Männchen wandern teils ab. Jede Familie hat einen eigenen Dialekt und vererbt Verhaltensweisen – eine Fähigkeit, die bisher nur beim Menschen bekannt war.",
+      " Orcas kommunizieren mit Klicks, Pfeifen und anderen Lauten, die für soziale Interaktion und Jagdkoordination wichtig sind. ",
+      "Schwertwale schlafen mit einem Auge offen, indem sie eine Gehirnhälfte abschalten, während die andere wach bleibt – ein Schlafmuster, das als unihemisphärischer Schlaf bekannt ist. Da sie auch im Schlaf an das Atmen denken müssen, bleibt eine Gehirnhälfte aktiv und ein Auge geöffnet."
+    ]
   },
   {
     "id": 21,
@@ -403,7 +547,8 @@ const data = [
     "max_length": 750,
     "litter_size": 1,
     "continents": "Africa, Asia",
-    "intelligence": 10
+    "intelligence": 10,
+    "habitat": "Savannen, Wäldern, Grasländern, Feuchtgebieten, tropische Regenwäldern, Bergen"
   },
   {
     "id": 22,
@@ -422,7 +567,8 @@ const data = [
     "max_length": 340,
     "litter_size": 1,
     "continents": "Africa, Asia, Americas",
-    "intelligence": 5
+    "intelligence": 5,
+    "habitat": "offene Savannen, dichte Regenwäldern, Schilfdickichten, lichte Wäldern, Feuchtgebieten, Bergen"
   },
   {
     "id": 23,
@@ -441,7 +587,8 @@ const data = [
     "max_length": 340,
     "litter_size": 2,
     "continents": "Americas, Europe, Asia",
-    "intelligence": 7
+    "intelligence": 7,
+    "habitat": "Arktis, Packeis, Küsten"
   },
   {
     "id": 24,
@@ -460,7 +607,8 @@ const data = [
     "max_length": 500,
     "litter_size": 1,
     "continents": "Africa",
-    "intelligence": 5
+    "intelligence": 5,
+    "habitat": "langsam fließende Gewässern, Seen, Flüssen, Sumpfgebieten"
   },
   {
     "id": 25,
@@ -479,7 +627,8 @@ const data = [
     "max_length": 180,
     "litter_size": 1,
     "continents": "Africa",
-    "intelligence": 9
+    "intelligence": 9,
+    "habitat": "Tropische Regenwälder, Auenwälder, Sekundärwälder, Bergregionen, Sumpfgebieten"
   },
   {
     "id": 26,
@@ -498,7 +647,8 @@ const data = [
     "max_length": 300,
     "litter_size": 3,
     "continents": "Americas, Europe, Asia",
-    "intelligence": 7
+    "intelligence": 7,
+    "habitat": "Wälder, Gebirgen, Tundra, Küstenregionen, Feuchtgebieten"
   },
   {
     "id": 27,
@@ -517,7 +667,8 @@ const data = [
     "max_length": 600,
     "litter_size": 1,
     "continents": "Africa",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Savannen, Waldlandschaften, Graslandschaften, Steppen"
   },
   {
     "id": 28,
@@ -536,7 +687,8 @@ const data = [
     "max_length": 160,
     "litter_size": 6,
     "continents": "Americas, Europe, Asia",
-    "intelligence": 9
+    "intelligence": 9,
+    "habitat": "Wälder, Grasländer, Tundren, Wüsten, Hochgebirgen, Feuchtgebieten"
   },
   {
     "id": 29,
@@ -555,7 +707,8 @@ const data = [
     "max_length": 280,
     "litter_size": 16,
     "continents": "Africa",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Savannen, Halbwüsten, Wüsten, Steppen, Graslandschaften"
   },
   {
     "id": 30,
@@ -574,7 +727,8 @@ const data = [
     "max_length": 114,
     "litter_size": 5,
     "continents": "all",
-    "intelligence": 6
+    "intelligence": 6,
+    "habitat": "Felsen, Klippen, hohe Gebäude, Baumhöhlen, Tundra, Halbwüsten"
   },
   {
     "id": 31,
@@ -593,7 +747,8 @@ const data = [
     "max_length": 350,
     "litter_size": 1,
     "continents": "all",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Meere, Ozeane, Küstenregionen, Inseln"
   },
   {
     "id": 32,
@@ -612,6 +767,7 @@ const data = [
     "max_length": 230,
     "litter_size": 12,
     "continents": "Asia, Africa",
-    "intelligence": 3
+    "intelligence": 3,
+    "habitat": "hügeliges Gelände im Dschungel, Wasserquellen, Wälder, Feldern"
   }
 ]

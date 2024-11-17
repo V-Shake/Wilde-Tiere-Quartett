@@ -250,7 +250,7 @@ main {
 }
 
 .group-B {
-    --group-color: #e92946;
+    --group-color: #ff3c3c;
 }
 
 .group-C {
@@ -365,7 +365,7 @@ main {
     grid-row: 1;
     background-color: var(--group-color);
     width: 100%;
-    height: 100%;
+    height: 130%;
 }
 
 .card-back-title{
@@ -378,7 +378,7 @@ main {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1rem;
-    margin-bottom: 0.2rem;
+    margin-top: 0.8rem;
 }
 
 /* Back view card number styling */
@@ -401,36 +401,37 @@ main {
     box-shadow: 0 0 0 3px var(--card-background-color);
 }
 
-/* Content area below the header */
+/* Define grid layout for card-back-content */
 .card-back-content {
     display: grid;
-    grid-column:  1 / -1;
-    grid-row: span 10;
+    grid-column: 1 / -1;
+    grid-row: span 10; /* Allow full vertical span of the content */
+    align-items: start; /* Align items at the top */
+    padding: 1rem; /* Add spacing inside the container */
+    height: 90%;
 }
 
-.funfact-list{
+/* Funfact list starts explicitly at the 2nd row */
+.funfact-list {
     text-align: left;
     font-size: 0.68rem;
     line-height: 1.2;
-    margin-top: -1rem;
-    margin-bottom: 0.4rem;
-    display: flex;  
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 1rem;
-    height: 100%;
-    gap: 0.3rem; 
+    gap: 0.2rem; /* Add consistent spacing between items */
 }
 
+/* Funfact item styling */
 .funfact-item {
     display: flex;
-    align-items: baseline; /* Aligns the number and text */
-    margin-top: 0.5rem; /* Space between items */
+    align-items: baseline;
 }
 
+/* Styling for the number in fun facts */
 .funfact-number {
-    background-color: var(--group-color); /* Group color */
+    background-color: var(--group-color); /* Use the group color */
     color: white;
     font-weight: bold;
     border-radius: 50%;
@@ -439,12 +440,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 0.5rem; /* Space between number and text */
+    margin-right: 0.5rem; /* Add spacing between number and text */
     font-size: 0.8rem;
 }
 
+/* Styling for the text in fun facts */
 .funfact-text {
-    flex: 1; /* Ensures the text takes up remaining space */
+    flex: 1;
     line-height: 1.5;
     font-size: 0.68rem;
     padding-left: 0.5rem;
@@ -539,7 +541,7 @@ main {
 /* Group rectangle */
 .group-rectangle {
     position: absolute;
-    top: 6%;
+    top: 1.7rem;
     left: 1rem;
     transform: translateY(-50%);
     display: flex;
