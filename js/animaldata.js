@@ -16,7 +16,14 @@ const data = [
     "max_length": 250,
     "litter_size": 4,
     "continents": "Africa, Asia",
-    "intelligence": 8
+    "intelligence": 8,
+    "habitat": "Savannen, Halbwüsten, Trockenwälder",
+    "fun_facts": [
+      "Löwen sind die stimmgewaltigsten Großkatzen; Ihr Gebrüll kann bis zu 8 Kilometer weit gehört werden, was sie zur lautesten Katze macht.",
+      "Löwen leben in Rudeln von bis zu 40 Tieren, was sie zu den geselligsten Raubkatzen macht. Ein Rudel besteht meist aus Weibchen und ihren Nachkommen, während nur wenige Männchen das Rudel beschützen.",
+      "Die Mähne eines männlichen Löwen zeigt sein Alter und seine Gesundheit an; je dunkler die Mähne, desto älter und gesünder ist der Löwe.",
+      "Rund 60% der Löwenbabys überleben ihr erstes Jahr nicht, oft aufgrund von Angriffen durch andere männliche Löwen."
+    ]
   },
   {
     "id": 2,

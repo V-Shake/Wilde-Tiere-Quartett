@@ -60,7 +60,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 3em;
-    height: 3em;
+    height: 4em;
     margin: 0 auto;
     flex-grow: 1;
     font-size: 0.8rem;
@@ -248,6 +248,44 @@ main {
     border-bottom: var(--thick-line-strength) solid var(--card-dark-color);
 }
 
+.border-bottom-white {
+    border-bottom: var(--thick-line-strength) solid var(--card-background-color);
+}
+
+
+.group-A {
+    --group-color: #7D982A;
+}
+
+.group-B {
+    --group-color: #e92946;
+}
+
+.group-C {
+    --group-color: #ceba60;
+}
+
+.group-D {
+    --group-color: #5F9EA0;
+}
+
+.group-E {
+    --group-color: #437ce6;
+}
+
+.group-F {
+    --group-color: #27af86;
+    ;
+}
+
+.group-G {
+    --group-color: #92643c;
+}
+
+.group-H {
+    --group-color: #7ed3d3;
+}
+
 #cards-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -262,7 +300,9 @@ main {
     background-color: var(--card-dark-color); 
 }
 
+/* Ensure the card container is positioned correctly for 3D transformation */
 .card-wrapper {
+    perspective: 1000px;
     background-color: var(--card-dark-color);
     padding: 0.5rem;
     border-radius: 1rem;
@@ -273,32 +313,159 @@ main {
     transition: all 0.3s ease-in-out;
     box-sizing: border-box; 
     margin: 0; 
-    width: 350px;
-    height: 500px; 
     cursor: pointer;
     position: relative;
+    width: 350px;
+    height: 500px; 
 }
 
-.card-content {
+/* General card styling */
+.card {
+    transform-style: preserve-3d; /* Enable 3D perspective */
+    transition: transform 0.6s ease; /* Smooth flipping effect */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+/* Flip the card */
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Front and back of the card */
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     background-color: var(--card-background-color);
+}
+
+/* Front side */
+.card-front {
+    display: grid;
     color: var(--card-dark-color);
+    overflow: hidden;
+}
+
+/* Back side */
+.card-back {
+    color: var(--card-dark-color);
+    transform: rotateY(180deg); /* Flip the back side initially */
     display: grid;
     overflow: hidden;
     width: 100%;
     height: 100%;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    border-radius: 1em;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
 }
 
+.card-back-header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    background-color: var(--group-color);
+    width: 100%;
+    height: 100%;
+}
+
+.card-back-title{
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 1.7rem;
+    padding-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+/* Back view card number styling */
+.card-back-number {
+    position: absolute;
+    top: -0.5rem; 
+    left: 1rem;
+    transform: translateY(50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--card-background-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 0.6em;
+    width: 2.5em;
+    height: 2.6em;
+    background-color: var(--group-color);
+    border: 1px solid var(--card-dark-color);
+    box-shadow: 0 0 0 3px var(--card-background-color);
+}
+
+/* Content area below the header */
+.card-back-content {
+    display: grid;
+    grid-column:  1 / -1;
+    grid-row: span 10;
+}
+
+.funfact-list{
+    text-align: left;
+    font-size: 0.68rem;
+    line-height: 1.2;
+    margin-top: -1rem;
+    margin-bottom: 0.4rem;
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    height: 100%;
+    gap: 0.3rem; 
+}
+
+.funfact-item {
+    display: flex;
+    align-items: baseline; /* Aligns the number and text */
+    margin-top: 0.5rem; /* Space between items */
+}
+
+.funfact-number {
+    background-color: var(--group-color); /* Group color */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem; /* Space between number and text */
+    font-size: 0.8rem;
+}
+
+.funfact-text {
+    flex: 1; /* Ensures the text takes up remaining space */
+    line-height: 1.5;
+    font-size: 0.68rem;
+    padding-left: 0.5rem;
+}
+
+/* Hover effect for card */
 .card-wrapper:hover {
     transform: translateY(-10px); 
     border: solid 1px var(--card-background-color);
     box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
 }
 
+/* Card image */
 .card-image {
     grid-column: span 6;
     grid-row: span 7;
@@ -309,6 +476,7 @@ main {
     object-fit: cover;
 }
 
+/* Card number styling */
 .card-number {
     position: absolute;
     top: 60%;
@@ -328,6 +496,7 @@ main {
     box-shadow: 0 0 0 3px var(--card-background-color);
 }
 
+/* Card title */
 .card-title {
     grid-column: span 5;
     grid-row: 8;
@@ -339,19 +508,25 @@ main {
     font-size: 1rem;
 }
 
+/* Card trivia */
 .card-trivia {
     grid-column: span 6;
+    grid-row: 9;
     text-align: left;
     padding-left: 4.8rem;
     padding-right: 1rem;
     font-size: 0.68rem;
-    line-height: 1.2; /* Adjust line height to ensure two lines */
-    margin-bottom: 0.6rem;
-    margin-top: -0.4rem;
-    /* border-top: 1px solid var(--card-dark-color); */
-    /* box-shadow: 2px 0px 10px var(--card-dark-color); */
+    line-height: 1.2;
+    margin-top: -1rem;
+    margin-bottom: 0.4rem;
+    display: flex;  
+    flex-direction: column;  
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 80%;
 }
 
+/* Group name styling */
 .groupname {
     grid-column: span 4;
     grid-row: 1;
@@ -366,13 +541,10 @@ main {
     color: var(--card-dark-color);
     font-size: 0.75em;
     font-weight: bold;
-    text-shadow:
-        -0.5px -0.5px 0 #FFF,
-        0.5px -0.5px 0 #FFF,
-        -0.5px 0.5px 0 #FFF,
-        0.5px 0.5px 0 #FFF;
+    text-shadow: -0.5px -0.5px 0 #FFF, 0.5px -0.5px 0 #FFF, -0.5px 0.5px 0 #FFF, 0.5px 0.5px 0 #FFF;
 }
 
+/* Group rectangle */
 .group-rectangle {
     position: absolute;
     top: 6%;
@@ -391,6 +563,7 @@ main {
     border: 1px solid var(--card-dark-color);
 }
 
+/* Intelligence box */
 .intelligence-box {
     grid-column: 5 / span 2;
     grid-row: 1;
@@ -407,32 +580,35 @@ main {
     border: 2px solid var(--group-color);
 }
 
+/* Intelligence icon */
 .intelligence-icon {
     display: flex;
     align-items: center;
     width: 1em;
     height: 1em;
-    color: var(--group-color)
+    color: var(--group-color);
 }
 
+/* Intelligence content */
 .intelligence-content {
     font-size: 0.75em;
     font-weight: bold;
     color: var(--card-background-color);
 }
 
-
+/* Stat box */
 .stat-box {
     grid-column: span 6;
     grid-row: span 2;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 0.6em;
+    gap: 0.5em;
     padding: 0 1rem;
-    margin-bottom: -0.8rem;
+    margin-top: 0.3rem;
 }
 
+/* Stat pairs */
 .stat-pair {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -469,6 +645,7 @@ main {
     grid-row: 2;
 }
 
+/* Stat icon and content */
 .stat-icon,
 .stat-content {
     display: flex;
@@ -476,6 +653,8 @@ main {
     align-items: center;
     font-size: 0.8em;
     font-weight: 500;
+    width: 3.2em;  /* Set a fixed width */
+    height: 3.2em;
 }
 
 .stat-icon {
@@ -489,56 +668,20 @@ main {
     object-fit: cover;
 }
 
-.stat-content {
-    flex-wrap: wrap;
-    word-break: break-word;
-    text-align: center;
-}
-
 .card-bottom {
     grid-column: span 6;
+    height:2em;
     font-size: 0.65em;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 1.5em;
+    padding: 0 1em;
     margin-top: 1.2rem;
     background-color: var(--group-color);
+    height:60%;
 }
 
-.group-A {
-    --group-color: #7D982A;
-}
-
-.group-B {
-    --group-color: #e92946;
-}
-
-.group-C {
-    --group-color: #ceba60;
-}
-
-.group-D {
-    --group-color: #5F9EA0;
-}
-
-.group-E {
-    --group-color: #437ce6;
-}
-
-.group-F {
-    --group-color: #27af86;
-    ;
-}
-
-.group-G {
-    --group-color: #92643c;
-}
-
-.group-H {
-    --group-color: #7ed3d3;
-}
 
 .active-link {
     text-decoration: underline;
@@ -663,3 +806,5 @@ main {
 #back-to-top.hide {
     bottom: -3rem;
 }
+
+
