@@ -17,6 +17,54 @@
         font-size: 0.8rem;
         margin-top: 0.5rem;
     }
+
+    .faszinierende-wildtiere h2 {
+        font-size: 1.8rem;
+    }
+
+    .faszinierende-wildtiere p {
+        font-size: 1.2rem;
+        width: 40rem;
+    }
+
+    .text-left h3 {
+        font-size: 1.6rem;
+    }
+
+    .text-left {
+        padding: 3rem;
+    }
+
+    .text-left p {
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+        width: auto;
+    }
+
+    .info-title {
+        font-size: 0.8rem;
+    }
+
+    #sorting-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sorting-buttons span {
+        grid-column: span 4;
+        margin-right: 0;
+        margin-bottom: 1rem; /* Add some space below the span */
+        display: block;
+        text-align: center;
+    }
+
+    #sorting-buttons button {
+        width: 100%; /* Make buttons take full width */
+    }
+    
 }
 
 @media (max-width: 1170px) {
@@ -31,7 +79,7 @@
     }
 
     .overview-header h1 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         margin-bottom: 0.5rem;
     }
 
@@ -39,6 +87,68 @@
         font-size: 0.7rem;
         margin-top: 0.3rem;
     }
+
+    .faszinierende-wildtiere h2 {
+        font-size: 1.6rem;
+    }
+
+    .faszinierende-wildtiere p {
+        font-size: 1rem;
+        width: 34rem;
+    }
+
+    .info-rectangle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        order: 1;
+    }
+
+    .text-left {
+        width: 100%;
+        padding: 2rem;
+        order: 2;
+    }
+
+    .text-left h3 {
+        font-size: 1.4rem;
+    }
+
+    .text-left p {
+        font-size: 0.8rem; 
+        width: 100%;
+    }
+
+    .image-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .info-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .info-row-rectangle {
+        width: 100%;
+        margin-bottom: 2rem; /* Add some space between the rectangles */
+    }
+
+    .info-title {
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 0.6rem 4rem;
+    }
+
+   
 }
 
 @media (max-width: 760px) {
@@ -47,13 +157,13 @@
     }
 
     .overview-header {
-        top: 5rem;
+        top: 6rem;
         width: 15rem;
     }
 
     .overview-header h1 {
-        font-size: 1.6rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+        margin-bottom: 0.9rem;
     }
 
     .overview-button {
@@ -61,19 +171,94 @@
         margin-top: 0;
         padding: 0.4rem 0.5rem;
     }
+
+    .faszinierende-wildtiere h2 {
+        font-size: 1.4rem;
+    }
+
+    .faszinierende-wildtiere p {
+        font-size: 0.8rem;
+        width: 26rem;
+    }
+
+    .overview-image {
+        width: 120%;
+    }
+
+    #logo {
+        font-size: 0.8rem;
+    }
+
+    ul {
+        gap: 2em;
+        font-size: 0.7rem;
+    }
+    
+    #sorting-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        padding: 0 2rem;
+    }
+
+    #sorting-buttons span {
+        grid-column: span 2;
+        margin-right: 0;
+        margin-bottom: 1rem; /* Add some space below the span */
+        display: block;
+        text-align: center;
+    }
+
+    #sorting-buttons button {
+        width: 100%; /* Make buttons take full width */
+    }
+  
 }
 
 @media screen and (max-width: 600px) {
-    .overview-header h1 {
-        font-size: 1rem;
+    .overview-header {
+        width: 13rem;
     }
 
-    .overview-header p {
-        font-size: 0.8rem;
+    .overview-header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
     }
 
     #cards-container {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
+    }
+
+    .faszinierende-wildtiere h2 {
+        margin-top: -0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .faszinierende-wildtiere p {
+        font-size: 0.7rem;
+        width: 22rem;
+    }
+
+    .overview-image {
+        width: 150%;
+    }
+
+    .text-left h3 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .text-left p {
+        font-size: 0.68rem; 
+        width: 100%;
+    }
+
+    #sorting-buttons {
+        margin: 1rem;
+        padding: 0 3rem;
     }
 }
