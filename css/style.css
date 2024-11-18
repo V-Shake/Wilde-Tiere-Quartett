@@ -753,9 +753,10 @@ main {
     background-color: var(--card-background-color);
     color: var(--card-dark-color);
     border-radius: 50px;
+    border: solid 1px var(--card-dark-color);
     text-decoration: none;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
