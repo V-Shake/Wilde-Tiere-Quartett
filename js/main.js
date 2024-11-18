@@ -1,7 +1,6 @@
 $(document).ready(function () {
-    let animalData = data; // Assuming 'data' is already available
+    let animalData = data; 
 
-    // Function to render cards based on the sorted data
     function renderCards(data, highlight = '') {
         $('#cards-container').empty(); // Clear current cards
 
