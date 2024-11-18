@@ -41,7 +41,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1000;
-    padding: 0.6rem 8rem;
+    padding: 0.6rem 6rem;
 }
 
 #logo {
@@ -132,7 +132,7 @@ main {
 .faszinierende-wildtiere {
     text-align: center;
     margin-top: 3rem;
-    padding: 0.6rem 8rem
+    padding: 0.6rem 6rem
 }
 
 .faszinierende-wildtiere h2 {
@@ -274,7 +274,7 @@ main {
 #cards-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
     align-items: start; 
     justify-items: center;
@@ -693,7 +693,7 @@ main {
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
-    padding: 0 4rem;
+    padding: 0.1rem;
 }
 
 #sorting-buttons button {
