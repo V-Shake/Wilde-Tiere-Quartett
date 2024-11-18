@@ -199,18 +199,13 @@ main {
 .info-row {
     display: flex;
     justify-content: space-between;
-    /* Space evenly between rectangles */
     gap: 2.5rem;
-    /* Add some space between rectangles */
     margin-top: 2.5rem;
-    /* Space above the row */
 }
 
 .info-row-rectangle {
     background: none;
-    /* No fill, just border */
     border: 1px solid var(--card-background-color);
-    /* Adjust as needed */
     border-radius: 40px;
     text-align: center;
     display: flex;
@@ -223,9 +218,7 @@ main {
 .info-img {
     flex: 1;
     width: 100%;
-    /* Ensure image fits within the rectangle */
     height: auto;
-    /* Maintain aspect ratio */
     object-fit: cover;
 }
 
@@ -292,7 +285,6 @@ main {
     background-color: var(--card-dark-color); 
 }
 
-/* Ensure the card container is positioned correctly for 3D transformation */
 .card-wrapper {
     perspective: 1000px;
     background-color: var(--card-dark-color);
@@ -311,22 +303,19 @@ main {
     height: 500px; 
 }
 
-/* General card styling */
 .card {
-    transform-style: preserve-3d; /* Enable 3D perspective */
-    transition: transform 0.6s ease; /* Smooth flipping effect */
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
     width: 100%;
     height: 100%;
     position: relative;
     
 }
 
-/* Flip the card */
 .card.flipped {
     transform: rotateY(180deg);
 }
 
-/* Front and back of the card */
 .card-front,
 .card-back {
     backface-visibility: hidden;
@@ -343,17 +332,15 @@ main {
     background-color: var(--card-background-color);
 }
 
-/* Front side */
 .card-front {
     display: grid;
     color: var(--card-dark-color);
     overflow: hidden;
 }
 
-/* Back side */
 .card-back {
     color: var(--card-dark-color);
-    transform: rotateY(180deg); /* Flip the back side initially */
+    transform: rotateY(180deg);
     display: grid;
     overflow: hidden;
     width: 100%;
@@ -381,7 +368,6 @@ main {
     margin-top: 0.8rem;
 }
 
-/* Back view card number styling */
 .card-back-number {
     position: absolute;
     top: -0.5rem; 
@@ -401,17 +387,15 @@ main {
     box-shadow: 0 0 0 3px var(--card-background-color);
 }
 
-/* Define grid layout for card-back-content */
 .card-back-content {
     display: grid;
     grid-column: 1 / -1;
-    grid-row: span 10; /* Allow full vertical span of the content */
-    align-items: start; /* Align items at the top */
-    padding: 1rem; /* Add spacing inside the container */
+    grid-row: span 10; 
+    align-items: start; 
+    padding: 1rem;
     height: 90%;
 }
 
-/* Funfact list starts explicitly at the 2nd row */
 .funfact-list {
     text-align: left;
     font-size: 0.68rem;
@@ -420,18 +404,17 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 0.2rem; /* Add consistent spacing between items */
+    gap: 0.2rem;
 }
 
-/* Funfact item styling */
 .funfact-item {
     display: flex;
     align-items: baseline;
 }
 
-/* Styling for the number in fun facts */
+
 .funfact-number {
-    background-color: var(--group-color); /* Use the group color */
+    background-color: var(--group-color); 
     color: white;
     font-weight: bold;
     border-radius: 50%;
@@ -440,11 +423,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 0.5rem; /* Add spacing between number and text */
+    margin-right: 0.5rem; 
     font-size: 0.8rem;
 }
 
-/* Styling for the text in fun facts */
 .funfact-text {
     flex: 1;
     line-height: 1.5;
@@ -452,14 +434,12 @@ main {
     padding-left: 0.5rem;
 }
 
-/* Hover effect for card */
 .card-wrapper:hover {
     transform: translateY(-10px); 
     border: solid 1px var(--card-background-color);
     box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
 }
 
-/* Card image */
 .card-image {
     grid-column: span 6;
     grid-row: span 7;
@@ -470,7 +450,6 @@ main {
     object-fit: cover;
 }
 
-/* Card number styling */
 .card-number {
     position: absolute;
     top: 60%;
@@ -490,7 +469,6 @@ main {
     box-shadow: 0 0 0 3px var(--card-background-color);
 }
 
-/* Card title */
 .card-title {
     grid-column: span 5;
     grid-row: 8;
@@ -502,7 +480,6 @@ main {
     font-size: 1rem;
 }
 
-/* Card trivia */
 .card-trivia {
     grid-column: span 6;
     grid-row: 9;
@@ -520,7 +497,6 @@ main {
     height: 80%;
 }
 
-/* Group name styling */
 .groupname {
     grid-column: span 4;
     grid-row: 1;
@@ -538,7 +514,6 @@ main {
     text-shadow: -0.5px -0.5px 0 #FFF, 0.5px -0.5px 0 #FFF, -0.5px 0.5px 0 #FFF, 0.5px 0.5px 0 #FFF;
 }
 
-/* Group rectangle */
 .group-rectangle {
     position: absolute;
     top: 1.7rem;
@@ -557,7 +532,6 @@ main {
     border: 1px solid var(--card-dark-color);
 }
 
-/* Intelligence box */
 .intelligence-box {
     grid-column: 5 / span 2;
     grid-row: 1;
@@ -574,7 +548,6 @@ main {
     border: 2px solid var(--group-color);
 }
 
-/* Intelligence icon */
 .intelligence-icon {
     display: flex;
     align-items: center;
@@ -583,14 +556,12 @@ main {
     color: var(--group-color);
 }
 
-/* Intelligence content */
 .intelligence-content {
     font-size: 0.75em;
     font-weight: bold;
     color: var(--card-background-color);
 }
 
-/* Stat box */
 .stat-box {
     grid-column: span 6;
     grid-row: span 2;
@@ -602,7 +573,6 @@ main {
     margin-top: 0.3rem;
 }
 
-/* Stat pairs */
 .stat-pair {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -639,7 +609,6 @@ main {
     grid-row: 2;
 }
 
-/* Stat icon and content */
 .stat-icon,
 .stat-content {
     display: flex;
@@ -647,7 +616,7 @@ main {
     align-items: center;
     font-size: 0.8em;
     font-weight: 500;
-    width: 3.2em;  /* Set a fixed width */
+    width: 3.2em; 
     height: 3.2em;
 }
 
@@ -697,7 +666,6 @@ main {
     transition: background-color 0.3s ease;
 }
 
-
 /* Font color for top of page */
 .font-black {
     color: var(--card-dark-color);
@@ -714,7 +682,7 @@ main {
     margin-right: 2rem;
     display: inline-block;
     line-height: 2rem;
-    grid-column: span 1; /* Span the first column */
+    grid-column: span 1;
     text-align: center;
 }
 
@@ -769,8 +737,6 @@ main {
 
 #sorting-buttons button:disabled {
     pointer-events: none;
-    opacity: 0.6;
-    /* Visual indication of being disabled */
 }
 
 .highlight {
