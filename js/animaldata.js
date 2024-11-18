@@ -16,7 +16,14 @@ const data = [
     "max_length": 250,
     "litter_size": 4,
     "continents": "Africa, Asia",
-    "intelligence": 8
+    "intelligence": 8,
+    "habitat": "Savannen, Halbwüsten, Trockenwälder",
+    "fun_facts": [
+      "Löwen sind die stimmgewaltigsten Großkatzen; Ihr Gebrüll kann bis zu 8 Kilometer weit gehört werden, was sie zur lautesten Katze macht.",
+      "Löwen leben in Rudeln von bis zu 40 Tieren, was sie zu den geselligsten Raubkatzen macht. Ein Rudel besteht meist aus Weibchen und ihren Nachkommen, während nur wenige Männchen das Rudel beschützen.",
+      "Die Mähne eines männlichen Löwen zeigt sein Alter und seine Gesundheit an; je dunkler die Mähne, desto älter und gesünder ist der Löwe.",
+      "Rund 60% der Löwenbabys überleben ihr erstes Jahr nicht, oft aufgrund von Angriffen durch andere männliche Löwen."
+    ]
   },
   {
     "id": 2,
@@ -35,7 +42,16 @@ const data = [
     "max_length": 150,
     "litter_size": 5,
     "continents": "Africa, Asia",
-    "intelligence": 5
+    "intelligence": 5,
+    "habitat": "Grasländer, Savannen, Halbwüsten",
+    "fun_facts": [
+      "Geparde können Geschwindigkeiten von bis zu 120 km/h erreichen und sind damit die schnellsten Landtiere der Welt.",
+      "Im Gegensatz zu vielen anderen Raubtieren sind Geparde tagaktiv und jagen hauptsächlich am frühen Morgen oder späten Nachmittag.",
+      "Der lange Schwanz hilft ihnen, beim Sprinten das Gleichgewicht zu halten und schnell die Richtung zu wechseln",
+      "Weibliche Geparde leben meist allein mit ihren Jungen, während Männchen oft in kleinen Gruppen, sogenannten „Brüdergruppen“, zusammenleben.",
+      "Geparde haben schwarze Tränenstreifen, die das Sonnenlicht reflektieren und ihnen helfen, besser zu sehen.",
+
+    ]
   },
   {
     "id": 3,
@@ -54,7 +70,15 @@ const data = [
     "max_length": 290,
     "litter_size": 4,
     "continents": "Asia",
-    "intelligence": 7
+    "intelligence": 7,
+    "habitat": "Tropische Regenwälder, Sumpfgebiete, Grasländer",
+    "fun_facts": [
+      "Tiger sind die größten Katzen der Welt.",
+      "Jeder Tiger hat ein einzigartiges Muster aus Streifen, ähnlich wie Fingerabdrücke bei Menschen. Diese Streifen helfen ihnen, sich in ihrer Umgebung zu tarnen.",
+      "Tiger sind Einzelgänger und jagen meist allein, vor allem nachts. Sie nutzen ihre Tarnung, um sich an ihre Beute heranzuschleichen.",
+      "Ein Tiger kann mit seinem Gebrüll bis zu drei Kilometer weit gehört werden. Es ist so kraftvoll, dass es seine Beute lähmen kann.",
+      "Tiger können sich mit Löwen kreuzen, was zu Hybriden wie Liger (Tiger-Männchen und Löwin) und Töwe (Tiger-Weibchen und Löwen-Männchen) führt."
+    ]
   },
   {
     "id": 4,
@@ -73,7 +97,14 @@ const data = [
     "max_length": 160,
     "litter_size": 3,
     "continents": "Africa, Asia",
-    "intelligence": 7
+    "intelligence": 7,
+    "habitat": "Savannen, Halbwüsten, Buschsteppen",
+    "fun_facts": [
+      "Tüpfelhyänen leben in großen Gruppen, sogenannten Clans, die aus bis zu 80 Tieren bestehen können. Diese Clans bestehen meist aus verwandten Weibchen und einigen Männchen.",
+      "Hyänen haben extrem starke Kiefer, die es ihnen ermöglichen, selbst große Knochen zu zermahlen und zu fressen. Sie sind auch dafür bekannt, Aas aus einer Entfernung von bis zu zehn Kilometern zu riechen.",
+      "Hyänen markieren ihre Reviere mit einem stark riechenden Sekret aus ihren Analdrüsen.",
+      "Während sie oft Aas fressen, jagen Tüpfelhyänen auch aktiv mittelgroße bis große Huftiere wie Zebras und Gazellen. Sie sind dafür bekannt, Beute von Löwen zu stehlen, wenn diese sich nicht wehren können.", 
+    ]
   },
   {
     "id": 5,
@@ -92,7 +123,15 @@ const data = [
     "max_length": 15,
     "litter_size": 1840,
     "continents": "Americas",
-    "intelligence": 2
+    "intelligence": 2,
+    "habitat": "Regenwälder, Bananenplantagen, Offene Flächen",
+    "fun_facts": [
+      "Die Brasilianische Wanderspinne gilt als eine der giftigsten Spinnen der Welt. Ihr Gift ist bis zu 20-mal tödlicher als das einer Schwarzen Witwe.", 
+      "Wanderspinnen zeigen ein aggressives Verhalten, wenn sie sich bedroht fühlen. Sie richten sich auf und zeigen ihre rötlichen Giftklauen, bevor sie beißen.",
+      "Im Gegensatz zu vielen anderen Spinnenarten baut die Wanderspinne kein Netz. Sie ist eine Jagdspinne, die aktiv auf Beute wie Insekten, Frösche und sogar Mäuse lauert",
+      "Diese Spinnen sind sehr schnell und können bis zu 50 Zentimeter weit springen, was ihnen hilft, ihre Beute zu fangen oder sich vor Bedrohungen zu schützen",
+      "Wanderspinnen sind sehr aggressiv und greifen schnell an, wenn sie sich bedroht fühlen."
+    ]
   },
   {
     "id": 6,
@@ -111,7 +150,16 @@ const data = [
     "max_length": 21,
     "litter_size": 50,
     "continents": "all",
-    "intelligence": 2
+    "intelligence": 2,
+    "habitat": "Wüsten, Tropen und Subtropen, Halbwüsten, Küstenregionen, Höhlen und Bäume, Savannen",
+    "fun_facts": [
+      "Skorpione sind nachtaktive Tiere, die tagsüber in Höhlen, unter Steinen oder in Spalten schlafen.",
+      "Alle Skorpione besitzen ein Gift, aber nur etwa 50 Arten sind für Menschen potenziell tödlich.",
+      "Skorpione sind lebendgebärend. Nach der Geburt tragen die kleinen Skorpione einige Zeit auf dem Rücken der Mutter, bis sie selbstständig werden.", 
+      "Einige Skorpionarten können bis zu zwei Jahre ohne Nahrung überleben, indem sie ihren Stoffwechsel verlangsamen und ihren Energieverbrauch minimieren.",
+      "Skorpione sind sehr widerstandsfähige Tiere, die in extremen Umgebungen leben können.",
+      "Die meisten Skorpione sind Einzelgänger und treffen sich nur zur Fortpflanzung, die oft mit einem aufwendigen „Hochzeitstanz“ verbunden ist."
+    ]
   },
   {
     "id": 7,
@@ -130,7 +178,13 @@ const data = [
     "max_length": 1,
     "litter_size": 400,
     "continents": "all",
-    "intelligence": 1
+    "intelligence": 1,
+    "habitat": "Wassernähe, Feuchte Gebiete, Städtische Gebiete",
+    "fun_facts": [
+      "Nur die weiblichen Moskitos stechen, um Blut zu saugen, das sie für die Entwicklung ihrer Eier benötigen. Männliche Moskitos ernähren sich hauptsächlich von Nektar und anderen Zuckern.",
+      "Mücken sind die tödlichsten Tiere der Welt, da sie Krankheiten wie Malaria, Dengue-Fieber, Zika-Virus und Gelbfieber übertragen.",
+      "Moskitos haben einen ausgeprägten Geruchssinn und können Menschen aus bis zu 30 Metern Entfernung riechen. Sie werden von Körpergerüchen, Kohlendioxid und Wärme angezogen.",  
+    ]
   },
   {
     "id": 8,
@@ -149,7 +203,17 @@ const data = [
     "max_length": 6,
     "litter_size": 35,
     "continents": "Americas",
-    "intelligence": 2
+    "intelligence": 2,
+    "habitat": "Regenwälder, Amazonasgebiet, Bromelien-Zonen",
+    "fun_facts": [
+      "Pfeilgiftfrösche sind bekannt für ihre leuchtenden Farben (rot, gelb, blau, grün),  die Fressfeinden signalisieren: „Ich bin giftig!“.",
+      "Der Schreckliche Pfeilgiftfrosch zählt zu den giftigsten Fröschen der Welt. Sein Gift kann innerhalb von Minuten tödlich sein und reicht aus, um bis zu 12 Menschen zu töten.",
+      "Das Gift stammt von den Insekten, die sie fressen, wie Ameisen und Termiten. In Gefangenschaft verlieren sie ihr Gift, da sie nicht die gleichen Nahrungsquellen haben.",
+      "Die Chocó-Ureinwohner Kolumbiens nutzen das Gift dieser Frösche, um ihre Jagdpfeile zu tränken.",
+      "Sie sind fürsorgliche Eltern. Sie tragen ihre Kaulquappen auf dem Rücken zu sicheren Wasserstellen in den Baumkronen, um sie vor Fressfeinden zu schützen.",
+      "Die Goldbauchnatter ist der einzige natürliche Feind des Pfeilgiftfrosches und hat eine Resistenz gegen sein Gift entwickelt."
+    ]
+
   },
   {
     "id": 9,
@@ -168,7 +232,17 @@ const data = [
     "max_length": 610,
     "litter_size": 80,
     "continents": "Africa, Asia, Americas, Oceania",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Flüssen, Seen, Sümpfen, Bächen, Brackwasser",
+    "fun_facts": [
+      "Krokodile existieren seit über 200 Millionen Jahren und gelten als lebende Fossilien. Sie waren bereits zur Zeit der Dinosaurier auf der Erde.",
+      "Sie sind Lauerjäger und können blitzschnell aus dem Wasser schnappen, um ihre Beute zu fangen.",
+      "Sie fressen Steine, um ihre Dichte zu erhöhen und besser im Wasser zu sinken. Dies hilft ihnen, unbemerkt auf Beute zu lauern.",
+      "Sie zeigen auch soziale Verhaltensweisen, spielen und kommunizieren durch verschiedene Laute.",
+      "Krokodile legen 20–80 Eier, deren Nesttemperatur das Geschlecht bestimmt; wärmeres Nest führt meist zu mehr Männchen.",
+      "Das Leistenkrokodil kann bis zu einem Jahr ohne Nahrung überleben dank Fettreserven im Schwanz. Sie benötigen nur etwa 10% ihrer Nahrung, um ihre Körpertemperatur aufrechtzuerhalten.",
+      "Ihre 60–70 Zähne wachsen ständig nach. Wenn ein Zahn verloren geht, wird er schnell ersetzt."
+    ]
   },
   {
     "id": 10,
@@ -187,7 +261,15 @@ const data = [
     "max_length": 550,
     "litter_size": 40,
     "continents": "Africa, Asia",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Savannen, Wäldern, landwirtschaftlich genutzten Flächen, tropischen Regenwäldern, Mangrovensümpfen",
+    "fun_facts": [
+      "Kobras besitzen starkes, neurotoxisches Gift, das unbehandelt tödlich sein kann.",
+      "Sie bilden bei Bedrohung eine auffällige „Kapuze“, um Feinde abzuschrecken.",
+      "Königskobras sind ungewöhnlich unter den Schlangen, da das Weibchen sich aktiv um die Brut kümmert. Es baut ein Nest aus Blättern und bewacht es bis zum Schlüpfen der Eier.",
+      "Der Glaube, dass Schlangenbeschwörer Kobras mit Musik hypnotisieren können, ist ein Mythos. Kobras sind taub und reagieren nicht auf Musik, sondern auf die Bewegungen des Instruments.",
+      "Kobras sind gute Schwimmer und können sowohl an Land als auch im Wasser jagen. Sie sind oft in der Nähe von Gewässern zu finden.",
+    ]
   },
   {
     "id": 11,
@@ -206,7 +288,15 @@ const data = [
     "max_length": 300,
     "litter_size": 30,
     "continents": "Asia",
-    "intelligence": 3
+    "intelligence": 3,
+    "habitat": "Savannen, Monsunwälder, Grasland, Küstengebiete, tropische Wälder, Mangrovensümpfe, felsige Ufer",
+    "fun_facts": [
+      "Komodowarane sind die größten lebenden Echsen.",
+      "Komodowarane sind opportunistische Jäger und ernähren sich von einer Vielzahl von Tieren, einschließlich Hirschen, Wildschweinen, und sogar anderen Komodowaranen. ",
+      "Komodowarane haben eine ausgezeichnete Sehkraft und können Beute aus bis zu 300 Metern Entfernung erkennen.",
+      "Komodowarane sind ausgezeichnete Schwimmer und können große Distanzen im Wasser zurücklegen, um andere Inseln zu erreichen.",
+      "Nach dem Schlüpfen klettern die jungen Komodowarane sofort in Bäume, um sich vor ihren größeren Artgenossen zu schützen, die sie fressen könnten.",
+    ]
   },
   {
     "id": 12,
@@ -225,7 +315,15 @@ const data = [
     "max_length": 130,
     "litter_size": 14,
     "continents": "Americas",
-    "intelligence": 3
+    "intelligence": 3,
+    "habitat": "Wäldern, Wüsten, Savannen, Sümpfen, Seen, Flüssen",
+    "fun_facts": [
+      "Schildkröten existieren seit über 220 Millionen Jahren und gehören zu den ältesten Reptilien der Erde. ",
+      "Viele Schildkrötenarten halten während extremer Wetterbedingungen eine Sommer- oder Winterstarre. Dies hilft ihnen, in heißen oder kalten Klimazonen zu überleben.",
+      "Schildkröten haben vier verschiedene Farbrezeptoren und können infrarotes und ultraviolettes Licht wahrnehmen, was ihnen eine bessere Sicht als Menschen ermöglicht.",
+      " Einige Schildkrötenarten, wie die griechische Landschildkröte, können das Sperma mehrerer Männchen über Jahre hinweg speichern und befruchtete Eier legen.",
+      "Schildkröten kommunizieren miteinander, um den Schlupf ihrer Eier zu synchronisieren, was sicherstellt, dass die Jungtiere gleichzeitig schlüpfen.",
+    ]
   },
   {
     "id": 13,
@@ -244,7 +342,13 @@ const data = [
     "max_length": 450,
     "litter_size": 15000000,
     "continents": "Americas, Europe,  Oceania",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Ozeane, Meere",
+    "fun_facts": [
+      "Der Schwertfisch besitzt ein schwertartiges Rostrum, das bis zu ein Drittel seiner Körperlänge ausmacht. Er nutzt dieses „Schwert“, um Beute zu betäuben oder in Schwärmen zu verletzen.",
+      "Schwertfische leben in der Regel als Einzelgänger, außer während der Fortpflanzungszeit. Sie sind sehr territorial und suchen oft tiefere Gewässer auf, um ihre Beute zu fangen.", 
+      " Schwertfische sind bekannt für ihre Schnelligkeit und Agilität im Wasser. Sie können Geschwindigkeiten von bis zu 97 km/h erreichen, was sie zu einem der schnellsten Fische im Ozean macht.",
+    ]
   },
   {
     "id": 14,
@@ -263,7 +367,14 @@ const data = [
     "max_length": 90,
     "litter_size": 20,
     "continents": "North America, Europe, Asia, Africa",
-    "intelligence": 1
+    "intelligence": 1,
+    "habitat": "Meeren, Süßwasser, feuchten Wäldern, Weinbergen, Wiesen, Gewässerrändern, trockene Gebieten",
+    "fun_facts": [
+      "Es gibt weltweit über 110.000 Arten von Schnecken.",
+      "Schnecken sind Zwitter und können sich selbst befruchten, aber sie bevorzugen die Paarung mit einem Partner.",
+      "Schnecken haben einen weichen Körper ohne Skelett, der von einer schützenden Schale umgeben sein kann. ",
+      "Beim Kriechen hinterlassen Schnecken eine Schleimspur, die ihnen hilft, sich fortzubewegen und gleichzeitig ihre Körperfeuchtigkeit zu bewahren."
+    ]
   },
   {
     "id": 15,
@@ -282,7 +393,13 @@ const data = [
     "max_length": 1400,
     "litter_size": 10000000,
     "continents": "South America, Africa, Oceania",
-    "intelligence": 6
+    "intelligence": 6,
+    "habitat": "Ozeane, Meere",
+    "fun_facts": [
+      "Koloss-Kalmare sind nicht der bösartigste Fisch im Meer, da sie von 17 Arten von Vögeln, Walen und Fischen gejagt werden. Besonders Pottwale, die über 20 m lang werden, ernähren sich häufig von ihnen.",
+      "Die Augen von Koloss-Kalmaren sind so groß wie ein Basketball mit einem Durchmesser von 27 cm und dienen nicht primär der Nahrungssuche im Dunkeln, sondern dem Erkennen von Pottwalen in der Tiefe.",
+      "Koloss-Kalmare sind Kannibalen, weshalb sie ihre Eier möglicherweise in seichteren Gewässern ablegen, um dem Kannibalismus durch erwachsene Artgenossen zu entgehen. Erwachsene Kalmare enthalten oft Überreste anderer Tintenfische.",
+    ]
   },
   {
     "id": 16,
@@ -301,7 +418,15 @@ const data = [
     "max_length": 360,
     "litter_size": 1,
     "continents": "Americas, Europe, Asia",
-    "intelligence": 6
+    "intelligence": 6,
+    "habitat": "Treibereis, Eisschollen, flache Küstenregionen",
+    "fun_facts": [
+      "Walrosse leben in großen Herden, die aus Hunderten bis Tausenden von Tieren bestehen können. Diese Herden sind oft nach Geschlechtern getrennt, und während der Paarungszeit kämpfen Männchen um das Recht, sich mit Weibchen zu paaren.",
+      "Weibliche Walrosse bringen nach einer Tragzeit von etwa 11 bis 16 Monaten ein Kalb zur Welt, das bereits bei der Geburt etwa 60 kg wiegt. Die Mutter säugt ihr Kalb bis zu einem Jahr lang.",
+      "Walrosse können bis zu 84 Stunden wach bleiben, bevor sie für kurze Zeit schlafen. Sie ruhen sich oft auf Eisschollen aus und können in dieser Zeit auch kuscheln, um Wärme zu teilen.",
+      "Diese Tiere sind ausgezeichnete Taucher und können in Tiefen von bis zu 500 bis 600 Metern tauchen, wobei sie bis zu 30 Minuten unter Wasser bleiben können.",
+      "Walrosse kommunizieren durch eine Vielzahl von Lauten wie Grunzen und Brüllen, die bis zu 1,5 Kilometer weit gehört werden können.",
+    ]
   },
   {
     "id": 17,
@@ -320,7 +445,13 @@ const data = [
     "max_length": 1450,
     "litter_size": 300,
     "continents": "Americas, Africa, Oceania",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "tropischen und subtropischen Gewässern, Ozeane, Atlantiks",
+    "fun_facts": [
+      "Trotz seiner Größe ist er für den Menschen völlig ungefährlich.",
+      "Im Gegensatz zu vielen anderen Haien schwimmen Walhaie nicht nur mit ihrer Schwanzflosse, sondern neigen ihren gesamten Körper von Seite zu Seite, während sie sich mit einer Geschwindigkeit von bis zu 5 km/h fortbewegen.",
+      "Diese Tiere sind Wanderer und legen große Strecken zurück. Ein weiblicher Walhai wurde per Satellitentracker verfolgt und legte über 20.000 Kilometer im Pazifik zurück."
+    ]
   },
   {
     "id": 18,
@@ -339,7 +470,14 @@ const data = [
     "max_length": 600,
     "litter_size": 14,
     "continents": "Americas, Africa, Oceania",
-    "intelligence": 5
+    "intelligence": 5,
+    "habitat": "Ozeane, gemäßigten und subtropischen Gewässern, Küstennähe",
+    "fun_facts": [
+      "Die auffällige Färbung des Weißen Hais – ein hellgrauer Rücken und ein weißer Bauch – ermöglicht eine hervorragende Tarnung im Wasser. Diese Färbung hilft ihnen, sich sowohl vor Beute als auch vor Fressfeinden zu verstecken.",
+      "Weiße Haie besitzen außergewöhnliche Sinne. Sie können selbst einen Tropfen Blut in einem Schwimmbecken riechen und haben die Fähigkeit, elektrische Felder wahrzunehmen, die von der Bewegung ihrer Beute erzeugt werden.",
+      "Ihr Gebiss ist als „Revolvergebiss“ bekannt, da sie mehrere Reihen von Zähnen haben. Wenn ein Zahn ausfällt, wächst sofort ein neuer nach. Ein Weißer Hai hat zwischen 23 und 28 Zähnen im Oberkiefer und bis zu 26 im Unterkiefer.",
+      "Ein bemerkenswertes Phänomen bei Weißen Haien ist, dass die Embryonen sich im Mutterleib gegenseitig fressen können, was als intrauteriner Kannibalismus bezeichnet wird. Dies führt dazu, dass nur die stärksten Nachkommen überleben.",
+    ]
   },
   {
     "id": 19,
@@ -358,7 +496,13 @@ const data = [
     "max_length": 3360,
     "litter_size": 1,
     "continents": "North America, Europe, Oceania, Antarctica",
-    "intelligence": 8
+    "intelligence": 8,
+    "habitat": "alle Weltmeeren",
+    "fun_facts": [
+      "Der Blauwal ist das größte Tier, das jemals auf der Erde gelebt hat.",
+      "Das Herz eines Blauwals wiegt etwa 400 Kilogramm, was ungefähr dem Gewicht eines Kleinwagens entspricht. Es schlägt nur etwa 6 Mal pro Minute, pumpt dabei jedoch mehrere Tausend Liter Blut durch den Körper.",
+      "Diese Riesen ernähren sich hauptsächlich von Krill, kleinen Krebstieren, und können täglich bis zu 4 Tonnen Krill fressen. Sie nutzen ihre Barten, um Wasser zu filtern und die Beute einzufangen.",
+    ]
   },
   {
     "id": 20,
@@ -377,7 +521,14 @@ const data = [
     "max_length": 950,
     "litter_size": 1,
     "continents": "North America, Europe, Oceania, Antarctica",
-    "intelligence": 10
+    "intelligence": 10,
+    "habitat": "alle Ozeanen",
+    "fun_facts": [
+      "Orcas sind für ihre hohe Intelligenz bekannt. Sie jagen in Gruppen, sogenannten Schulen, und nutzen komplexe Jagdtechniken, um Beute wie Fische, Robben und andere Wale zu fangen.",
+      "Orcas leben in matriarchalen Gruppen, die Wissen und Sprache über Generationen weitergeben. Weibchen bleiben meist in ihrer Geburtsgruppe, Männchen wandern teils ab. Jede Familie hat einen eigenen Dialekt und vererbt Verhaltensweisen – eine Fähigkeit, die bisher nur beim Menschen bekannt war.",
+      " Orcas kommunizieren mit Klicks, Pfeifen und anderen Lauten, die für soziale Interaktion und Jagdkoordination wichtig sind. ",
+      "Schwertwale schlafen mit einem Auge offen, indem sie eine Gehirnhälfte abschalten, während die andere wach bleibt – ein Schlafmuster, das als unihemisphärischer Schlaf bekannt ist. Da sie auch im Schlaf an das Atmen denken müssen, bleibt eine Gehirnhälfte aktiv und ein Auge geöffnet."
+    ]
   },
   {
     "id": 21,
@@ -396,7 +547,17 @@ const data = [
     "max_length": 750,
     "litter_size": 1,
     "continents": "Africa, Asia",
-    "intelligence": 10
+    "intelligence": 10,
+    "habitat": "Savannen, Wäldern, Grasländern, Feuchtgebieten, tropische Regenwäldern, Bergen",
+    "fun_facts": [
+      "Elefanten sind die größten Landsäugetiere mit bis zu 4 m Schulterhöhe, 4–7 Tonnen Gewicht und einem lebenslangen Wachstum.",
+      "Sie fressen über 17 Stunden täglich, verwerten nur 40–50 % der Nahrung und trinken, wenn möglich, über 100 Liter Wasser täglich.",
+      "Elefanten wandern 5–70 km pro Tag und schlafen nur etwa 4 Stunden.",
+      "Mit 22 Monaten haben sie die längste Tragzeit, Jungtiere wiegen bei der Geburt 100 kg und sind sofort mobil.",
+      "Elefanten sind hochintelligent, zeigen Trauer, erkennen sich im Spiegel, nutzen Werkzeuge und versorgen verletzte Herdenmitglieder.",
+      "Matriarchale Herden bestehen aus bis zu 10 Tieren, während Männchen meist als Einzelgänger leben.",
+      "Kommunikation erfolgt über Lautäußerungen, Infraschall und Körpersprache."
+    ]
   },
   {
     "id": 22,
@@ -415,7 +576,16 @@ const data = [
     "max_length": 340,
     "litter_size": 1,
     "continents": "Africa, Asia, Americas",
-    "intelligence": 5
+    "intelligence": 5,
+    "habitat": "offene Savannen, dichte Regenwäldern, Schilfdickichten, lichte Wäldern, Feuchtgebieten, Bergen",
+    "fun_facts": [
+      "Büffel haben ein ausgezeichnetes Gedächtnis und erinnern sich an erlittene Angriffe, konfrontieren frühere Angreifer und gelten als gefährlich, wenn es um den Schutz ihrer Herde geht.",
+      "Ihr dickes, zotteliges Fell schützt sie vor Kälte und extremen Wetterbedingungen.",
+      "Büffel sind sanftmütig, arbeiten in großen Herden zusammen und schützen ihre Kälber durch gemeinsames Umsorgen und Verteidigen.",
+      "Schlammbäder regulieren die Körpertemperatur, schützen vor Sonne, fördern Gruppenzusammenhalt und ermöglichen Männchen, Stärke zu demonstrieren.",
+      "Weibliche Büffel entscheiden demokratisch die Richtung der Herde, indem sie während der Rast in ihre Wunschrichtung blicken.",
+      "Weibliche Büffel gebären in der Regenzeit, Kälber bleiben ein Jahr bei der Mutter, während junge Männchen sich später Jungbullenherden anschließen."
+    ]
   },
   {
     "id": 23,
@@ -434,7 +604,15 @@ const data = [
     "max_length": 340,
     "litter_size": 2,
     "continents": "Americas, Europe, Asia",
-    "intelligence": 7
+    "intelligence": 7,
+    "habitat": "Arktis, Packeis, Küsten",
+    "fun_facts": [
+      "Eisbärenjungen verlassen nach vier bis fünf Monaten den Bau und bleiben etwa zwei Jahre bei der Mutter, um Überlebenstechniken in der Arktis zu lernen.",
+      "Eisbären haben einen außergewöhnlichen Geruchssinn, den sie nutzen, um ihre Hauptbeute, Robben, aufzuspüren.",
+      "Sie können tagelang ununterbrochen schwimmen. Der Rekord für die längste Schwimmstrecke eines Eisbären liegt bei 687 km in 9 Tagen.",
+      "Weniger als 2 % der Eisbärenjagden sind erfolgreich.",
+      "Grizzly-Eisbär-Hybriden, auch „Grolar- oder Pizzlybären“ genannt, existieren, ähneln beiden Arten äußerlich und verhalten sich meist wie Eisbären, da sie häufig von Eisbärenmüttern aufgezogen werden."
+    ]
   },
   {
     "id": 24,
@@ -453,7 +631,16 @@ const data = [
     "max_length": 500,
     "litter_size": 1,
     "continents": "Africa",
-    "intelligence": 5
+    "intelligence": 5,
+    "habitat": "langsam fließende Gewässern, Seen, Flüssen, Sumpfgebieten",
+    "fun_facts": [
+      "Nilpferde können bis zu 5 Minuten die Luft anhalten, um auf See- oder Flussböden zu laufen, was ihnen den Spitznamen „Flusspferd“ eingebracht hat.",
+      "Als Pflanzenfresser ernähren sie sich von durchschnittlich 36 kg Gras pro Nacht.",
+      "Die Haut von Nilpferden muss feucht bleiben, da sie bei längerer Sonneneinstrahlung aufreißt; eine rote, ölige Flüssigkeit aus Unterhaardrüsen dient als Sonnenschutz, Antibiotikum und Insektenschutzmittel.",
+      "Sie erkennen Freunde oder Feinde am Geruch von Kot, den sie in sogenannten „Middens“ ablegen und zur Kommunikation nutzen.",
+      "Weibliche Nilpferde bringen alle zwei Jahre ein Junges zur Welt und säugen bis zu 18 Monate, wobei die Bindung zu ihrem Kalb sehr eng ist und sie bei Gefahr aggressiv reagieren.",
+      "Flusspferde kommunizieren mit Grunzen, Knurren, Stöhnen und einem lauten Brüllen, wobei die meisten Laute unter Wasser erzeugt werden."
+    ]
   },
   {
     "id": 25,
@@ -472,11 +659,22 @@ const data = [
     "max_length": 180,
     "litter_size": 1,
     "continents": "Africa",
-    "intelligence": 9
+    "intelligence": 9,
+    "habitat": "Tropische Regenwälder, Auenwälder, Sekundärwälder, Bergregionen, Sumpfgebieten",
+    "fun_facts": [
+      "Gorillas teilen etwa 98 % ihres Erbguts mit Menschen und sind daher anfällig für menschliche Krankheiten, da ihnen entsprechende Immunitäten fehlen.",
+      "Berggorillas verbringen etwa ein Viertel des Tages mit Pflanzenfressen.",
+      "Nachts schlafen Gorillagruppen in Nestern, Jungtiere bleiben bei der Mutter.",
+      "Gorillas haben 16 Rufe, darunter Bellen und Brusttrommeln zur Rivalenimpression.",
+      "Berggorillas leben in Familiengruppen mit einem dominanten Männchen; ältere Tiere wechseln zur Vermeidung von Inzucht die Gruppe.",
+      "Gorillas haben individuelle Nasen- und Fingerabdrücke zur Identifikation.",
+      "Gorillas können nicht schwimmen, meiden aber tiefes Wasser und nutzen Stöcke zum Prüfen.",
+      "Gorillas bevorzugen kleinere Freundeskreise mit begrenzten sozialen Bindungen.",
+    ]
   },
   {
     "id": 26,
-    "name_german": "Braunbär",
+    "name_german": "Grizzlybär",
     "trivia_german": "Wenn er sich bedroht fühlt, stellt er sich auf die Hinterbeine, um größer zu wirken.",
     "trivia": "If it feels threatened, it stands up on its hind legs to appear larger.",
     "group": "G",
@@ -491,7 +689,14 @@ const data = [
     "max_length": 300,
     "litter_size": 3,
     "continents": "Americas, Europe, Asia",
-    "intelligence": 7
+    "intelligence": 7,
+    "habitat": "Wälder, Gebirgen, Tundra, Küstenregionen, Feuchtgebieten",
+    "fun_facts": [
+      "Grizzlybären sind Allesfresser, bevorzugen aber pflanzliche Nahrung wie Beeren, Gräser, Kräuter und Nüsse, essen gelegentlich auch Fisch oder größere Tiere.",
+      "Grizzlys haben eines der stärksten Gebisse der Welt mit einer Bisskraft von fast 85 Kilo pro Quadratzentimeter.",
+      "Grizzlybären halten keine echte Winterruhe, sondern eine Winterruhe mit leicht gesenkter Körpertemperatur, wobei sie gelegentlich aufwachen und sich bewegen. Je nach Länge des Winters können Grizzlybären bis zu sieben Monate in ihren Höhlen verbringen, ohne während dieser Zeit auf die Toilette zu gehen.",
+      "Grizzlybären reiben ihren Körper an Bäumen, um sich zu kratzen und anderen Bären ihre Präsenz zu zeigen.",
+    ]
   },
   {
     "id": 27,
@@ -510,7 +715,17 @@ const data = [
     "max_length": 600,
     "litter_size": 1,
     "continents": "Africa",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Savannen, Waldlandschaften, Graslandschaften, Steppen",
+    "fun_facts": [
+      "Giraffen sind die größten Landtiere, bis zu 5,7 Meter hoch, und Neugeborene sind so groß wie ein durchschnittlicher Mensch.",
+      "Giraffen fressen täglich bis zu 45 kg Blätter und Zweige und erreichen hohe Äste mit ihren langen Hälse und Beinen.",
+      "Sie trinken wenig, da sie die meiste Flüssigkeit aus ihrer Nahrung aufnehmen; ihr langer Hals macht es schwer, sich zu bücken und Wasser zu trinken, weshalb sie nur alle paar Tage trinken müssen.",
+      "Ihre Zunge ist dunkelblau, um sich vor Sonnenbrand zu schützen, und kann Blätter von Dornen greifen.",
+      "Männliche Giraffen kämpfen durch „Halskämpfe“, um die Dominanz zu klären.",
+      "Giraffen haben keine echten Hörner, sondern Ossikone, die bei Männchen dicker und bei Weibchen flauschiger sind.",
+      "Giraffenbabys fallen bei der Geburt etwa zwei Meter und bleiben 1,5 Jahre bei ihrer Mutter.",
+    ]
   },
   {
     "id": 28,
@@ -529,7 +744,17 @@ const data = [
     "max_length": 160,
     "litter_size": 6,
     "continents": "Americas, Europe, Asia",
-    "intelligence": 9
+    "intelligence": 9,
+    "habitat": "Wälder, Grasländer, Tundren, Wüsten, Hochgebirgen, Feuchtgebieten",
+    "fun_facts": [
+      "Wölfe heulen nicht wegen des Mondes, sondern zur Kommunikation mit dem Rudel oder zur Abwehr anderer Wölfe.",
+      "Wölfe paaren sich ein Leben lang.",
+      "Der Begriff „Alpha-Wolf“ ist veraltet, da die Rudelführer einfach die Eltern sind, nicht durch Kämpfe an die Spitze kommen.",
+      "Wölfe halten keinen Winterschlaf und können das ganze Jahr über beobachtet werden.",
+      "Erwachsene graue Wölfe können alleine überleben, suchen aber oft einen Partner und gründen ein neues Rudel.",
+      "Wolfwelpen sind blind, taub und abhängig von der Mutter, werden aber auch von anderen Rudelmitgliedern gepflegt.",
+      "Wölfe sind sehr intelligent, mit komplexen sozialen Strukturen und Fähigkeiten, wie der Pflege von verletzten Rudelmitgliedern und der Erziehung ihrer Nachkommen.",
+    ]
   },
   {
     "id": 29,
@@ -548,7 +773,16 @@ const data = [
     "max_length": 280,
     "litter_size": 16,
     "continents": "Africa",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Savannen, Halbwüsten, Wüsten, Steppen, Graslandschaften",
+    "fun_facts": [
+      "Strauße sind die größten Vögel der Welt, wobei ihr Hals fast die Hälfte ihrer Höhe ausmacht.",
+      "Strauße vergraben ihren Kopf nicht im Sand, sondern sind häufig beim Fressen oder Wenden ihrer Eier beobachtet worden, was diesen Eindruck erweckt.",
+      "Ihre langen, dicken Wimpern schützen die Augen vor Sandstürmen, die in ihrem Lebensraum häufig sind.",
+      "Durch ihren flachen Brustkorb und kleine Flügel sind Strauße flugunfähig. Obwohl sie flugunfähig sind, können sie mit ihren Flügeln ihre Balance beim Laufen und bei der Verteidigung gegen Raubtiere halten.",
+      "Strauße können bis zu zwei Wochen ohne Wasser auskommen, da sie Wasser aus ihrer Nahrung beziehen und ihren Wasserverlust begrenzen können.",
+      "Strauße können Menschen mit einem einzigen Kick töten, da ihre kräftigen Beine eine hohe Schlagkraft haben.",
+    ]
   },
   {
     "id": 30,
@@ -567,7 +801,16 @@ const data = [
     "max_length": 114,
     "litter_size": 5,
     "continents": "all",
-    "intelligence": 6
+    "intelligence": 6,
+    "habitat": "Felsen, Klippen, hohe Gebäude, Baumhöhlen, Tundra, Halbwüsten",
+    "fun_facts": [
+      "Wanderfalken sind die schnellsten Vögel der Welt.",  
+      "Ihr Sturzflug ist so stark, dass sie theoretisch die Wirbelsäule eines Menschen bei Kollision brechen könnten, was jedoch nie passiert ist.",
+      "Sie sind sehr präzise Jäger und nutzen ihre Geschwindigkeit, um Beute in großen Höhen anzuspeisen und im Sturzflug zu betäuben.",
+      "Wanderfalken verteidigen ihre Nester aggressiv gegen viele Raubtiere wie Füchse, große Eulen und Bären.",
+      "Wanderfalken migrieren jährlich bis zu 25.000 km, aber nicht alle Vögel dieser Art ziehen; einige bleiben ganzjährig an einem Ort.",
+      "Ihre Nester sind minimalistisch und bestehen meist aus einer Mulde in Sand, Kies oder auf Felsen, oft auch in städtischen Umgebungen wie Hochhäusern.",
+    ]
   },
   {
     "id": 31,
@@ -586,7 +829,17 @@ const data = [
     "max_length": 350,
     "litter_size": 1,
     "continents": "all",
-    "intelligence": 4
+    "intelligence": 4,
+    "habitat": "Meere, Ozeane, Küstenregionen, Inseln",
+    "fun_facts": [
+      "Albatrosse wählen ihren Partner durch einen rituellen Tanz und bleiben oft bis zu 50 Jahre zusammen, sind jedoch nicht strikt monogam. Die Balz des Laysan-Albatros umfasst bis zu 25 Tänze.",
+      "Der Start vom Boden ist schwierig, da sie Wind und Geschwindigkeit brauchen, um abzuheben.",
+      "Albatrosse können im Flug schlafen und fliegen weite Strecken ohne Flügelschlag.",
+      "Sie bauen gemeinsam ein Nest und brüten abwechselnd alle zwei Jahre ein Ei.",
+      "Der Schwarzfußalbatros kehrt nach drei Jahren zurück, verbringt zwei Jahre mit Balz und Nestbau und beginnt nach sieben Jahren mit der Fortpflanzung.",
+      "Bei Nahrungsmangel opfern die Eltern ihre Küken, um selbst zu überleben.",
+      "Die Küken bleiben vier bis fünf Monate im Nest, während die Eltern nach Nahrung suchen.",
+    ]
   },
   {
     "id": 32,
@@ -605,6 +858,16 @@ const data = [
     "max_length": 230,
     "litter_size": 12,
     "continents": "Asia, Africa",
-    "intelligence": 3
+    "intelligence": 3,
+    "habitat": "hügeliges Gelände im Dschungel, Wasserquellen, Wälder, Feldern",
+    "fun_facts": [
+      "Nur männliche Pfauen haben die auffälligen Farben und den prächtigen Schwanz. Weibliche Pfauen sind schlichter in grauen und braunen Tönen.",
+      "Weibliche Pfauen beurteilen Männchen anhand ihres Schwanzes, seiner Größe und des Farbenspiels. Auch Vibrationen und Tanzbewegungen spielen eine Rolle.",
+      "Beide Geschlechter haben einen Haarschopf, der beim Balzen als Sensor fungiert.",
+      "Pfauenmänner verstoßen nach jeder Brutzeit ihre Federn und lassen sie im nächsten Jahr prächtiger wachsen.",
+      "Alte Pfauenweibchen können männliche Merkmale entwickeln, wie Federpracht und Männerrufe.",
+      "Pfauen können trotz ihres schweren Schwanzes kurze Strecken fliegen, um sich vor Gefahren zu retten.",
+      "Ihre Federn sind mit mikroskopischen Kristallen bedeckt, die die schimmernden Farben erzeugen."
+    ]
   }
 ]

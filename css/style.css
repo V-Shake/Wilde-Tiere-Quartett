@@ -4,16 +4,19 @@
     --thick-line-strength: 1px;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     font-family: "Fira Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 #wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto 1fr;
-   
+
 }
 
 body {
@@ -34,11 +37,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; 
-    position: fixed; 
-    top: 0; 
-    z-index: 1000; 
-    padding: 0.6rem 8rem; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 0.6rem 8rem;
 }
 
 #logo {
@@ -46,6 +49,7 @@ nav {
     text-transform: uppercase;
     margin-right: auto;
     font-weight: 600;
+    font-size: 1rem;
 }
 
 ul {
@@ -55,10 +59,11 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 3em;
     height: 4em;
     margin: 0 auto;
     flex-grow: 1;
+    font-size: 0.8rem;
 }
 
 nav ul li a {
@@ -68,14 +73,14 @@ nav ul li a {
 
 main {
     grid-column: span 4;
-    padding-top: 6rem; 
+    padding-top: 6rem;
 }
 
 .overview-page {
     background-color: transparent;
-    padding: 0; 
+    padding: 0;
     margin: 0;
-    position: relative; 
+    position: relative;
     width: 100%;
     height: auto;
     display: flex;
@@ -87,60 +92,40 @@ main {
 
 .overview-header {
     color: var(--card-dark-color);
-    top: 9rem;
+    top: 15rem;
     text-align: center;
-    margin-top: 10vh;
     position: absolute;
-    width: 25rem;
-    text-shadow:
-    -0.5px -0.5px 0 #FFF,
-    0.5px -0.5px 0 #FFF,
-    -0.5px 0.5px 0 #FFF,
-    0.5px 0.5px 0 #FFF;
+    width: 38rem;
 }
 
 .overview-header h1 {
-    font-size: 1.5rem; 
+    font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: bold;
 }
 
-.overview-header p {
-    font-size: 1rem; 
-    line-height: 1.6; 
-    max-width: 600px; 
-    margin: 0 auto; 
-}
-
 .overview-button {
-    display: inline-block; 
-    margin-top: 1rem; 
-    padding: 0.5rem 1rem; 
-    font-size: 0.8rem; 
-    background-color: transparent;
-    border: 1px solid;
-    border-radius: 8px; 
-    cursor: pointer; 
-    transition: all 0.3s ease; 
-    text-decoration: none; 
-    color: var(--card-dark-color);
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--card-background-color);
+    background-color:  var(--card-dark-color);
 }
 
 .overview-button:hover {
-    background-color: var(--card-dark-color);
-    color: var(--card-background-color);
-    border-color: var(--card-dark-color); 
-    text-shadow:
-    -0px -0px 0 #FFF,
-    0.5px -0px 0 #FFF,
-    -0px 0px 0 #FFF,
-    0px 0px 0 #FFF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
 
 .overview-image {
     width: 100%;
     height: auto;
-    display: block; 
+    display: block;
     margin-bottom: 2rem;
 }
 
@@ -156,6 +141,14 @@ main {
     color: var(--card-background-color);
 }
 
+.faszinierende-wildtiere p {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    margin: 0 auto 5rem auto;
+    width: 50rem;
+    line-height: 1.8;
+}
+
 .info-rectangle {
     display: flex;
     margin-top: 2rem;
@@ -169,24 +162,27 @@ main {
 .text-left {
     width: 50%;
     text-align: left;
-    padding: 4rem;
-    display: flex; /* Enables flexbox layout */
-    flex-direction: column; /* Aligns content vertically */
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
 }
 
 .text-left h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--card-background-color);
+    width: 90%;
 }
 
 .text-left p {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--card-background-color);
+    margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .image-right {
@@ -194,21 +190,27 @@ main {
 }
 
 .image-right img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
 }
 
 .info-row {
     display: flex;
-    justify-content: space-between; /* Space evenly between rectangles */
-    gap: 2.5rem; /* Add some space between rectangles */
-    margin-top: 2.5rem; /* Space above the row */
+    justify-content: space-between;
+    /* Space evenly between rectangles */
+    gap: 2.5rem;
+    /* Add some space between rectangles */
+    margin-top: 2.5rem;
+    /* Space above the row */
 }
 
 .info-row-rectangle {
-    background: none; /* No fill, just border */
-    border: 1px solid var(--card-background-color); /* Adjust as needed */
+    background: none;
+    /* No fill, just border */
+    border: 1px solid var(--card-background-color);
+    /* Adjust as needed */
     border-radius: 40px;
     text-align: center;
     display: flex;
@@ -220,14 +222,16 @@ main {
 
 .info-img {
     flex: 1;
-    width: 100%; /* Ensure image fits within the rectangle */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; 
+    width: 100%;
+    /* Ensure image fits within the rectangle */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
 }
 
 .info-title {
-    margin: 1.5rem; /* Space between image and text */
-    font-size: 1.2rem; /* Adjust font size */
+    margin: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     /* text-transform: uppercase; */
 }
@@ -236,45 +240,157 @@ main {
     border-bottom: var(--thick-line-strength) solid var(--card-dark-color);
 }
 
-.card-wrapper {
-    background-color: var(--card-dark-color);
-    padding: 12px;
-    display: inline-block;
+.border-bottom-white {
+    border-bottom: var(--thick-line-strength) solid var(--card-background-color);
 }
 
-.card-content {
-    background-color: var(--card-background-color);
-    color: var(--card-dark-color);
+
+.group-A {
+    --group-color: #7D982A;
+}
+
+.group-B {
+    --group-color: #ff3c3c;
+}
+
+.group-C {
+    --group-color: #ceba60;
+}
+
+.group-D {
+    --group-color: #5F9EA0;
+}
+
+.group-E {
+    --group-color: #437ce6;
+}
+
+.group-F {
+    --group-color: #27af86;
+    ;
+}
+
+.group-G {
+    --group-color: #92643c;
+}
+
+.group-H {
+    --group-color: #2cc7db;
+}
+
+#cards-container {
     display: grid;
-    overflow: hidden;
-    width: 300px;
-    height: 450px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    border-radius: 1em;
-    position: relative;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2rem;
+    justify-content: center;
+    align-items: start; 
+    justify-items: center;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--card-dark-color); 
 }
 
-.card-image {
-    grid-column: span 6;
-    grid-row: span 7;
-    background-color: white;
+/* Ensure the card container is positioned correctly for 3D transformation */
+.card-wrapper {
+    perspective: 1000px;
+    background-color: var(--card-dark-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box; 
+    margin: 0; 
+    cursor: pointer;
+    position: relative;
+    width: 350px;
+    height: 500px; 
+}
+
+/* General card styling */
+.card {
+    transform-style: preserve-3d; /* Enable 3D perspective */
+    transition: transform 0.6s ease; /* Smooth flipping effect */
     width: 100%;
     height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+    position: relative;
+    
 }
 
-.card-number {
+/* Flip the card */
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Front and back of the card */
+.card-front,
+.card-back {
+    backface-visibility: hidden;
     position: absolute;
-    top: 60%;
-    left: 1rem;
-    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    text-align: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: var(--card-background-color);
+}
+
+/* Front side */
+.card-front {
+    display: grid;
+    color: var(--card-dark-color);
+    overflow: hidden;
+}
+
+/* Back side */
+.card-back {
+    color: var(--card-dark-color);
+    transform: rotateY(180deg); /* Flip the back side initially */
+    display: grid;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.card-back-header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    background-color: var(--group-color);
+    width: 100%;
+    height: 130%;
+}
+
+.card-back-title{
+    grid-column: 2 / 6;
+    grid-row: 1;
+    padding-left: 1.7rem;
+    padding-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+/* Back view card number styling */
+.card-back-number {
+    position: absolute;
+    top: -0.5rem; 
+    left: 1rem;
+    transform: translateY(50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--card-background-color);
     font-weight: 700;
     font-size: 1.2rem;
     border-radius: 0.6em;
@@ -285,6 +401,96 @@ main {
     box-shadow: 0 0 0 3px var(--card-background-color);
 }
 
+/* Define grid layout for card-back-content */
+.card-back-content {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: span 10; /* Allow full vertical span of the content */
+    align-items: start; /* Align items at the top */
+    padding: 1rem; /* Add spacing inside the container */
+    height: 90%;
+}
+
+/* Funfact list starts explicitly at the 2nd row */
+.funfact-list {
+    text-align: left;
+    font-size: 0.68rem;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.2rem; /* Add consistent spacing between items */
+}
+
+/* Funfact item styling */
+.funfact-item {
+    display: flex;
+    align-items: baseline;
+}
+
+/* Styling for the number in fun facts */
+.funfact-number {
+    background-color: var(--group-color); /* Use the group color */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem; /* Add spacing between number and text */
+    font-size: 0.8rem;
+}
+
+/* Styling for the text in fun facts */
+.funfact-text {
+    flex: 1;
+    line-height: 1.5;
+    font-size: 0.68rem;
+    padding-left: 0.5rem;
+}
+
+/* Hover effect for card */
+.card-wrapper:hover {
+    transform: translateY(-10px); 
+    border: solid 1px var(--card-background-color);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Card image */
+.card-image {
+    grid-column: span 6;
+    grid-row: span 7;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Card number styling */
+.card-number {
+    position: absolute;
+    top: 60%;
+    left: 1rem;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--card-background-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 0.6em;
+    width: 2.5em;
+    height: 2.6em;
+    background-color: var(--group-color);
+    border: 1px solid var(--card-dark-color);
+    box-shadow: 0 0 0 3px var(--card-background-color);
+}
+
+/* Card title */
 .card-title {
     grid-column: span 5;
     grid-row: 8;
@@ -296,19 +502,25 @@ main {
     font-size: 1rem;
 }
 
+/* Card trivia */
 .card-trivia {
     grid-column: span 6;
-    display: flex;
+    grid-row: 9;
     text-align: left;
     padding-left: 4.8rem;
     padding-right: 1rem;
-    font-size: .68em;
-    margin-bottom: 0.6rem;
-    margin-top: -0.4rem;
-    /* border-top: 1px solid var(--card-dark-color); */
-    /* box-shadow: 2px 0px 10px var(--card-dark-color); */
+    font-size: 0.68rem;
+    line-height: 1.2;
+    margin-top: -1rem;
+    margin-bottom: 0.4rem;
+    display: flex;  
+    flex-direction: column;  
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 80%;
 }
 
+/* Group name styling */
 .groupname {
     grid-column: span 4;
     grid-row: 1;
@@ -323,16 +535,13 @@ main {
     color: var(--card-dark-color);
     font-size: 0.75em;
     font-weight: bold;
-    text-shadow:
-        -0.5px -0.5px 0 #FFF,
-        0.5px -0.5px 0 #FFF,
-        -0.5px 0.5px 0 #FFF,
-        0.5px 0.5px 0 #FFF;
+    text-shadow: -0.5px -0.5px 0 #FFF, 0.5px -0.5px 0 #FFF, -0.5px 0.5px 0 #FFF, 0.5px 0.5px 0 #FFF;
 }
 
+/* Group rectangle */
 .group-rectangle {
     position: absolute;
-    top: 6%;
+    top: 1.7rem;
     left: 1rem;
     transform: translateY(-50%);
     display: flex;
@@ -348,6 +557,7 @@ main {
     border: 1px solid var(--card-dark-color);
 }
 
+/* Intelligence box */
 .intelligence-box {
     grid-column: 5 / span 2;
     grid-row: 1;
@@ -364,32 +574,35 @@ main {
     border: 2px solid var(--group-color);
 }
 
+/* Intelligence icon */
 .intelligence-icon {
     display: flex;
     align-items: center;
     width: 1em;
     height: 1em;
-    color: var(--group-color)
+    color: var(--group-color);
 }
 
+/* Intelligence content */
 .intelligence-content {
     font-size: 0.75em;
     font-weight: bold;
     color: var(--card-background-color);
 }
 
-
+/* Stat box */
 .stat-box {
     grid-column: span 6;
     grid-row: span 2;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 0.6em;
+    gap: 0.5em;
     padding: 0 1rem;
-    margin-bottom: -0.8rem;
+    margin-top: 0.3rem;
 }
 
+/* Stat pairs */
 .stat-pair {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -426,6 +639,7 @@ main {
     grid-row: 2;
 }
 
+/* Stat icon and content */
 .stat-icon,
 .stat-content {
     display: flex;
@@ -433,6 +647,8 @@ main {
     align-items: center;
     font-size: 0.8em;
     font-weight: 500;
+    width: 3.2em;  /* Set a fixed width */
+    height: 3.2em;
 }
 
 .stat-icon {
@@ -446,55 +662,20 @@ main {
     object-fit: cover;
 }
 
-.stat-content {
-    flex-wrap: wrap;
-    word-break: break-word;
-    text-align: center;
-}
-
 .card-bottom {
     grid-column: span 6;
+    height:2em;
     font-size: 0.65em;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 1.5em;
+    padding: 0 1em;
     margin-top: 1.2rem;
     background-color: var(--group-color);
+    height:60%;
 }
 
-.group-A {
-    --group-color: #7D982A;
-}
-
-.group-B {
-    --group-color: #ed3838;
-}
-
-.group-C {
-    --group-color: #ceba60;
-}
-
-.group-D {
-    --group-color: #44b492;
-}
-
-.group-E {
-    --group-color: #437ce6;
-}
-
-.group-F {
-    --group-color: #386054;;
-}
-
-.group-G {
-    --group-color: #725f4f;
-}
-
-.group-H {
-    --group-color: #20d7f0;
-}
 
 .active-link {
     text-decoration: underline;
@@ -503,14 +684,19 @@ main {
 
 /* Navigation Behavior */
 .transparent-light {
-    background-color: rgba(16, 16, 16, 0.2); 
-    transition: background-color 0.3s ease; 
+    background-color: rgba(16, 16, 16, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 .transparent-dark {
-    background-color: rgba(16, 16, 16, 0.98);
-    transition: background-color 0.3s ease; 
+    background: rgba(16, 16, 16, 0.93); 
+    box-shadow: 0 4px 30px rgba(3, 3, 3, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(27, 27, 27, 0.52);
+    transition: background-color 0.3s ease;
 }
+
 
 /* Font color for top of page */
 .font-black {
@@ -522,30 +708,33 @@ main {
     color: var(--card-background-color);
 }
 
-
 /* Sorting Buttons*/
 #sorting-buttons span {
-    font-size: 0.8rem; 
-    margin-right: 2rem; 
-    display: inline-block; 
-    line-height: 2rem; 
+    font-size: 1rem;
+    margin-right: 2rem;
+    display: inline-block;
+    line-height: 2rem;
+    grid-column: span 1; /* Span the first column */
+    text-align: center;
 }
 
 #sorting-buttons {
     margin: 3rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
+    padding: 0 4rem;
 }
 
 #sorting-buttons button {
     appearance: none;
     background-color: #060606;
-    border:  #030303; 
+    border: #030303;
     border-radius: 10px;
     box-sizing: border-box;
-    color: var(--card-background-color); 
+    color: var(--card-background-color);
     cursor: pointer;
     font-size: 0.7rem;
     line-height: normal;
@@ -557,7 +746,7 @@ main {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: auto;
+    width: 100%; 
     will-change: transform;
 }
 
@@ -580,14 +769,19 @@ main {
 
 #sorting-buttons button:disabled {
     pointer-events: none;
-    opacity: 0.6; /* Visual indication of being disabled */
+    opacity: 0.6;
+    /* Visual indication of being disabled */
 }
 
+.highlight {
+    color: var(--group-color);
+    font-weight: bold;
+}
 
 /* Back to Top Button */
 #back-to-top {
-    display: none; 
-    position: fixed; 
+    display: none;
+    position: fixed;
     right: 2.5rem;
     padding: 0.5rem 0.6rem;
     background-color: var(--card-background-color);
@@ -596,21 +790,22 @@ main {
     text-decoration: none;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); 
-  }
-  
-  #back-to-top:hover {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#back-to-top:hover {
     box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
     padding: 0.6rem 0.7rem;
     transform: translateY(-2px);
-  }
-  
-  #back-to-top.show {
-    display: block; 
+}
+
+#back-to-top.show {
+    display: block;
     bottom: 3rem;
-  }
-  
-  #back-to-top.hide {
-    bottom: -3rem; 
-  }
-  
+}
+
+#back-to-top.hide {
+    bottom: -3rem;
+}
+
+
